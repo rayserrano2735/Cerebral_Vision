@@ -1,0 +1,777 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDM Architecture Flow - Source to Insight</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #1f2937;
+            color: #f3f4f6;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .subtitle {
+            text-align: center;
+            color: #9ca3af;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        .panel {
+            background: #374151;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .panel-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .panel-number {
+            background: #3b82f6;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .panel-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .panel-subtitle {
+            color: #9ca3af;
+            font-size: 0.9rem;
+            margin-left: 55px;
+            margin-bottom: 20px;
+        }
+        .split-view {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .source-box {
+            background: #1f2937;
+            border-radius: 8px;
+            padding: 20px;
+            border: 2px solid;
+        }
+        .source-box.rl {
+            border-color: #f59e0b;
+        }
+        .source-box.cerebral {
+            border-color: #8b5cf6;
+        }
+        .source-header {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .badge {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .badge.rl {
+            background: #f59e0b;
+            color: #78350f;
+        }
+        .badge.cerebral {
+            background: #8b5cf6;
+            color: #ffffff;
+        }
+        table {
+            width: 100%;
+            font-size: 0.85rem;
+            border-collapse: collapse;
+        }
+        table th {
+            background: #4b5563;
+            padding: 8px;
+            text-align: left;
+            font-weight: 600;
+            color: #f3f4f6;
+            border: 1px solid #6b7280;
+        }
+        table td {
+            padding: 8px;
+            border: 1px solid #4b5563;
+            color: #d1d5db;
+        }
+        .incompatible {
+            background: #7f1d1d;
+            color: #fca5a5;
+            font-weight: 600;
+        }
+        .udm-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .udm-table {
+            background: #1f2937;
+            border: 2px solid #10b981;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .udm-table-name {
+            font-weight: 600;
+            color: #10b981;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+        .udm-field {
+            font-size: 0.8rem;
+            color: #9ca3af;
+            padding: 4px 0;
+            font-family: 'Courier New', monospace;
+        }
+        .key-field {
+            color: #fbbf24;
+        }
+        .datamart-box {
+            background: #1f2937;
+            border: 2px solid #6366f1;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .sql-box {
+            background: #111827;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: #9ca3af;
+            overflow-x: auto;
+        }
+        .sql-keyword {
+            color: #60a5fa;
+            font-weight: 600;
+        }
+        .sql-function {
+            color: #a78bfa;
+        }
+        .insight-value {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #10b981;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .chart-container {
+            background: #1f2937;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .arrow-down {
+            text-align: center;
+            font-size: 2rem;
+            color: #6b7280;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>UDM Architecture Flow</h1>
+        <p class="subtitle">From Incompatible Sources to Actionable Insights</p>
+        
+        <!-- PANEL 1: THE PROBLEM -->
+        <div class="panel">
+            <div class="panel-header">
+                <div class="panel-number">1</div>
+                <div class="panel-title">The Problem: Incompatible Source Systems</div>
+            </div>
+            <div class="panel-subtitle">Column-based structures with different identifiers, scales, and care models</div>
+            
+            <div class="split-view">
+                <div class="source-box rl">
+                    <div class="source-header">
+                        <span class="badge rl">RESILIENCE LAB</span>
+                        <span style="color: #f59e0b;">RL_EPISODE_OUTCOMES</span>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Sample Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="incompatible">patient_id</td>
+                                <td>RL-10234</td>
+                            </tr>
+                            <tr>
+                                <td>episode_id</td>
+                                <td>E-2024-001</td>
+                            </tr>
+                            <tr>
+                                <td class="incompatible">care_team_id</td>
+                                <td>TEAM-A</td>
+                            </tr>
+                            <tr>
+                                <td class="incompatible">phq9_baseline</td>
+                                <td>18.0</td>
+                            </tr>
+                            <tr>
+                                <td class="incompatible">phq9_final</td>
+                                <td>6.0</td>
+                            </tr>
+                            <tr>
+                                <td class="incompatible">outcome_status</td>
+                                <td>Improved</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="margin-top: 15px; font-size: 0.85rem; color: #fca5a5;">
+                        ✗ Uses care team ORGANIZATION<br>
+                        ✗ PHQ-9 scale (0-27)<br>
+                        ✗ TEXT status values
+                    </div>
+                </div>
+                
+                <div class="source-box cerebral">
+                    <div class="source-header">
+                        <span class="badge cerebral">CEREBRAL</span>
+                        <span style="color: #8b5cf6;">CEREBRAL_PATIENT_EPISODES</span>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Sample Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="incompatible">member_id</td>
+                                <td>C-50012</td>
+                            </tr>
+                            <tr>
+                                <td>episode_number</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td class="incompatible">practitioner_id</td>
+                                <td>PRAC-301</td>
+                            </tr>
+                            <tr>
+                                <td class="incompatible">depression_score_initial</td>
+                                <td>72.0</td>
+                            </tr>
+                            <tr>
+                                <td class="incompatible">depression_score_final</td>
+                                <td>45.0</td>
+                            </tr>
+                            <tr>
+                                <td class="incompatible">treatment_result</td>
+                                <td>IMP</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="margin-top: 15px; font-size: 0.85rem; color: #fca5a5;">
+                        ✗ Uses individual PERSON<br>
+                        ✗ Proprietary scale (0-100)<br>
+                        ✗ CODE status values
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="arrow-down">↓</div>
+        
+        <!-- PANEL 2: THE SOLUTION -->
+        <div class="panel">
+            <div class="panel-header">
+                <div class="panel-number">2</div>
+                <div class="panel-title">The Solution: Universal Data Model Integration</div>
+            </div>
+            <div class="panel-subtitle">Combined ERD + Instance Model showing schema relationships with actual data</div>
+            
+            <div style="position: relative; height: 1450px; margin-top: 30px;">
+                <!-- SVG Layer for Arrows -->
+                <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                            <polygon points="0 0, 10 3, 0 6" fill="#10b981"></polygon>
+                        </marker>
+                    </defs>
+                    
+                    <!-- 1. PARTY->PERSON -->
+                    <path d="M 120 200 L 120 420" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"></path>
+                    
+                    <!-- 2. PARTY->ORGANIZATION -->
+                    <path d="M 220 200 L 220 300 L 350 300 L 350 420" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"></path>
+                    
+                    <!-- 3. PARTY->PARTY_ROLE -->
+                    <path d="M 270 180 L 550 180 L 550 420" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"></path>
+                    
+                    <!-- 4. PARTY_ROLE->PARTY_RELATIONSHIP (from_party_id FK) -->
+                    <path d="M 580 600 L 580 750" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"></path>
+                    
+                    <!-- 4b. PARTY_ROLE->PARTY_RELATIONSHIP (to_party_id FK) -->
+                    <path d="M 660 600 L 660 750" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"></path>
+                    
+                    <!-- 5. PARTY_ROLE->EPISODE_ROLE -->
+                    <path d="M 760 510 L 1000 510" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"></path>
+                    
+                    <!-- 6. EPISODE->EPISODE_ROLE -->
+                    <path d="M 1000 380 L 1000 400 L 1100 400 L 1100 420" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"></path>
+                    
+                    <!-- 7. PARTY_ROLE->DELIVERY_ROLE -->
+                    <path d="M 550 600 L 550 1200 L 380 1200 L 380 1250" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"></path>
+                    
+                    <!-- 8. DELIVERY->DELIVERY_ROLE -->
+                    <path d="M 950 1150 L 950 1220 L 450 1220 L 450 1250" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"></path>
+                    
+                    <!-- 9. EPISODE->DELIVERY -->
+                    <path d="M 975 380 L 975 1050" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"></path>
+                    
+                    <!-- 10. VISIT->DELIVERY -->
+                    <path d="M 120 1000 L 120 1150 L 850 1150" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"></path>
+                    
+                    <!-- 11. OFFERING->DELIVERY -->
+                    <path d="M 350 1000 L 350 1070 L 850 1070" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"></path>
+                    
+                    <!-- 12. EPISODE->EPISODE_OUTCOME -->
+                    <path d="M 975 220 L 975 175 L 850 175" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"></path>
+                    
+                    <!-- 13. OUTCOME_TYPE->EPISODE_OUTCOME -->
+                    <path d="M 900 100 L 850 100" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"></path>
+                </svg>
+                
+                <!-- Tables with Absolute Positioning -->
+                <div style="position: relative; z-index: 2;">
+                    <!-- Row 1: Root Entities + EPISODE_OUTCOME -->
+                    <div class="udm-table" style="position: absolute; left: 20px; top: 20px; width: 250px;">
+                        <div class="udm-table-name">PARTY</div>
+                        <table style="margin-top: 10px; font-size: 0.65rem; width: 100%;">
+                            <thead><tr><th>party_id</th><th>type</th></tr></thead>
+                            <tbody>
+                                <tr style="background: #1e3a5a;"><td>P-RL-10234</td><td>PERSON</td></tr>
+                                <tr style="background: #1e3a5a;"><td>P-C-50012</td><td>PERSON</td></tr>
+                                <tr style="background: #1e3a5a;"><td>TEAM-A</td><td>ORG</td></tr>
+                                <tr style="background: #1e3a5a;"><td>PRAC-301</td><td>PERSON</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="udm-table" style="position: absolute;left: 650px;top: 20px;width: 200px;">
+                        <div class="udm-table-name">EPISODE_OUTCOME</div>
+                        <table style="margin-top: 10px; font-size: 0.65rem; width: 100%;">
+                            <thead><tr><th>outcome_id</th><th>value</th></tr></thead>
+                            <tbody>
+                                <tr style="background: #1e3a5a;"><td>OUT-001-B</td><td>18.0</td></tr>
+                                <tr style="background: #1e3a5a;"><td>OUT-001-F</td><td>6.0</td></tr>
+                                <tr style="background: #1e3a5a;"><td>OUT-006-B</td><td>19.4</td></tr>
+                                <tr style="background: #1e3a5a;"><td>OUT-006-F</td><td>12.2</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="udm-table" style="position: absolute;left: 900px;top: 20px;width: 200px;">
+                        <div class="udm-table-name">OUTCOME_TYPE</div>
+                        <table style="margin-top: 10px; font-size: 0.65rem; width: 100%;">
+                            <thead><tr><th>type</th><th>min</th><th>max</th></tr></thead>
+                            <tbody>
+                                <tr style="background: #1e3a5a;"><td>PHQ9</td><td>0</td><td>27</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Row 2: EPISODE -->
+                    <div class="udm-table" style="position: absolute;left: 900px;top: 220px;width: 250px;">
+                        <div class="udm-table-name">EPISODE</div>
+                        <table style="margin-top: 10px; font-size: 0.65rem; width: 100%;">
+                            <thead><tr><th>episode_id</th><th>start</th><th>end</th></tr></thead>
+                            <tbody>
+                                <tr style="background: #1e3a5a;"><td>EP-001</td><td>2024-01-15</td><td>2024-07-15</td></tr>
+                                <tr style="background: #1e3a5a;"><td>EP-006</td><td>2024-05-01</td><td>2024-11-01</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Row 3: PARTY Subtypes + EPISODE_ROLE -->
+                    <div class="udm-table" style="position: absolute; left: 20px; top: 420px; width: 200px;">
+                        <div class="udm-table-name">PERSON</div>
+                        <table style="margin-top: 10px; font-size: 0.65rem; width: 100%;">
+                            <thead><tr><th>party_id</th><th>name</th></tr></thead>
+                            <tbody>
+                                <tr style="background: #1e3a5a;"><td>P-RL-10234</td><td>J. Smith</td></tr>
+                                <tr style="background: #1e3a5a;"><td>P-C-50012</td><td>L. Garcia</td></tr>
+                                <tr style="background: #1e3a5a;"><td>PRAC-301</td><td>Dr. Anderson</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="udm-table" style="position: absolute; left: 240px; top: 420px; width: 220px;">
+                        <div class="udm-table-name">ORGANIZATION</div>
+                        <table style="margin-top: 10px; font-size: 0.65rem; width: 100%;">
+                            <thead><tr><th>party_id</th><th>name</th></tr></thead>
+                            <tbody>
+                                <tr style="background: #1e3a5a;"><td>TEAM-A</td><td>RL Team A</td></tr>
+                                <tr style="background: #1e3a5a;"><td>TEAM-CEREBRAL-1</td><td>Cerebral T1</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="udm-table" style="position: absolute; left: 480px; top: 420px; width: 280px;">
+                        <div class="udm-table-name">PARTY_ROLE</div>
+                        <table style="margin-top: 10px; font-size: 0.65rem; width: 100%;">
+                            <thead><tr><th>party_role_id</th><th>party_id</th><th>role</th></tr></thead>
+                            <tbody>
+                                <tr style="background: #1e3a5a;"><td>PR-001</td><td>P-RL-10234</td><td>PATIENT</td></tr>
+                                <tr style="background: #1e3a5a;"><td>PR-002</td><td>P-C-50012</td><td>PATIENT</td></tr>
+                                <tr style="background: #1e3a5a;"><td>PR-003</td><td>TEAM-A</td><td>CARE_TEAM</td></tr>
+                                <tr style="background: #1e3a5a;"><td>PR-004</td><td>PRAC-301</td><td>PRACTITIONER</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="udm-table" style="position: absolute;left: 1000px;top: 420px;width: 300px;">
+                        <div class="udm-table-name">EPISODE_ROLE</div>
+                        <table style="margin-top: 10px; font-size: 0.65rem; width: 100%;">
+                            <thead><tr><th>episode_role_id</th><th>episode_id</th><th>party_role_id</th></tr></thead>
+                            <tbody>
+                                <tr style="background: #1e3a5a;"><td>ER-001</td><td>EP-001</td><td>PR-001</td></tr>
+                                <tr style="background: #1e3a5a;"><td>ER-002</td><td>EP-006</td><td>PR-002</td></tr>
+                                <tr style="background: #1e3a5a;"><td>ER-003</td><td>EP-001</td><td>PR-003</td></tr>
+                                <tr style="background: #1e3a5a;"><td>ER-004</td><td>EP-006</td><td>PR-004</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Row 4: PARTY_RELATIONSHIP -->
+                    <div class="udm-table" style="position: absolute; left: 564px; top: 750px; width: 280px;">
+                        <div class="udm-table-name">PARTY_RELATIONSHIP</div>
+                        <table style="margin-top: 10px; font-size: 0.65rem; width: 100%;">
+                            <thead><tr><th>from</th><th>to</th><th>type</th></tr></thead>
+                            <tbody>
+                                <tr style="background: #1e3a5a;"><td>ORG-RL-INC</td><td>TEAM-A</td><td>ROLLUP</td></tr>
+                                <tr style="background: #1e3a5a;"><td>PRAC-CEREBRAL</td><td>PRAC-301</td><td>AFFIL</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Row 5: VISIT and OFFERING -->
+                    <div class="udm-table" style="position: absolute; left: 20px; top: 900px; width: 200px;">
+                        <div class="udm-table-name">VISIT</div>
+                        <table style="margin-top: 10px; font-size: 0.65rem; width: 100%;">
+                            <thead><tr><th>visit_id</th><th>date</th></tr></thead>
+                            <tbody>
+                                <tr style="background: #1e3a5a;"><td>VISIT-001</td><td>2024-04-15</td></tr>
+                                <tr style="background: #1e3a5a;"><td>VISIT-006A</td><td>2024-06-15</td></tr>
+                                <tr style="background: #1e3a5a;"><td>VISIT-006B</td><td>2024-09-15</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="udm-table" style="position: absolute; left: 240px; top: 900px; width: 220px;">
+                        <div class="udm-table-name">OFFERING</div>
+                        <table style="margin-top: 10px; font-size: 0.65rem; width: 100%;">
+                            <thead><tr><th>offering_id</th><th>name</th></tr></thead>
+                            <tbody>
+                                <tr style="background: #1e3a5a;"><td>OFFER-RL-IC</td><td>RL Integrated Care</td></tr>
+                                <tr style="background: #1e3a5a;"><td>OFFER-STD</td><td>Standard Therapy</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Row 6: DELIVERY -->
+                    <div class="udm-table" style="position: absolute; left: 850px; top: 1050px; width: 300px;">
+                        <div class="udm-table-name">DELIVERY</div>
+                        <table style="margin-top: 10px; font-size: 0.65rem; width: 100%;">
+                            <thead><tr><th>delivery_id</th><th>visit_id</th><th>offering_id</th></tr></thead>
+                            <tbody>
+                                <tr style="background: #1e3a5a;"><td>DEL-001</td><td>VISIT-001</td><td>OFFER-RL-IC</td></tr>
+                                <tr style="background: #1e3a5a;"><td>DEL-006A</td><td>VISIT-006A</td><td>OFFER-STD</td></tr>
+                                <tr style="background: #1e3a5a;"><td>DEL-006B</td><td>VISIT-006B</td><td>OFFER-RL-IC</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Row 7: DELIVERY_ROLE -->
+                    <div class="udm-table" style="position: absolute; left: 240px; top: 1250px; width: 280px;">
+                        <div class="udm-table-name">DELIVERY_ROLE</div>
+                        <table style="margin-top: 10px; font-size: 0.65rem; width: 100%;">
+                            <thead><tr><th>delivery_id</th><th>party_id</th><th>role</th></tr></thead>
+                            <tbody>
+                                <tr style="background: #1e3a5a;"><td>DEL-001</td><td>TEAM-A</td><td>CARE_TEAM</td></tr>
+                                <tr style="background: #1e3a5a;"><td>DEL-006A</td><td>PRAC-301</td><td>PRACT</td></tr>
+                                <tr style="background: #1e3a5a;"><td>DEL-006B</td><td>TEAM-CEREBRAL-1</td><td>CARE_TEAM</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 30px; padding: 20px; background: #065f46; border-radius: 8px; text-align: center;">
+                <div style="font-size: 1.2rem; color: #d1fae5; font-weight: 600;">✓ Patient identifiers unified through PARTY</div>
+                <div style="font-size: 1.2rem; color: #d1fae5; font-weight: 600;">✓ Scores normalized to PHQ-9 standard</div>
+                <div style="font-size: 1.2rem; color: #d1fae5; font-weight: 600;">✓ Care teams &amp; practitioners both as PARTY</div>
+                <div style="font-size: 1.2rem; color: #d1fae5; font-weight: 600;">✓ Methodology tracked via OFFERING</div>
+            </div>
+        </div>
+        
+        <div class="arrow-down">↓</div>
+        
+        <!-- PANEL 3: THE SIMPLIFICATION -->
+        <div class="panel">
+            <div class="panel-header">
+                <div class="panel-number">3</div>
+                <div class="panel-title">The Simplification: Data Mart Aggregation</div>
+            </div>
+            <div class="panel-subtitle">UDM complexity hidden behind clean dimensional model for business consumption</div>
+            
+            <div class="datamart-box">
+                <div style="color: #6366f1; font-weight: 600; font-size: 1.1rem; margin-bottom: 15px;">
+                    MONTHLY_TIME_SERIES_FACT
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>month_key</th>
+                            <th>year_month</th>
+                            <th>avg_phq9_score</th>
+                            <th>episode_count</th>
+                            <th>adoption_pct</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>202412</td>
+                            <td>2024-12</td>
+                            <td>12.30</td>
+                            <td>53</td>
+                            <td>0</td>
+                        </tr>
+                        <tr style="background: #1e3a8a;">
+                            <td>202501</td>
+                            <td>2025-01</td>
+                            <td>11.80</td>
+                            <td>54</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>202502</td>
+                            <td>2025-02</td>
+                            <td>11.20</td>
+                            <td>56</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>202512</td>
+                            <td>2025-12</td>
+                            <td>6.80</td>
+                            <td>78</td>
+                            <td>98</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="sql-box">
+                    <span class="sql-keyword">SELECT</span><br>
+                    &nbsp;&nbsp;TO_CHAR(episode_start_month, 'YYYYMM')::<span class="sql-keyword">INT</span> <span class="sql-keyword">AS</span> month_key,<br>
+                    &nbsp;&nbsp;episode_start_month <span class="sql-keyword">AS</span> year_month,<br>
+                    &nbsp;&nbsp;<span class="sql-function">AVG</span>(final_score) <span class="sql-keyword">AS</span> avg_phq9_score,<br>
+                    &nbsp;&nbsp;<span class="sql-function">COUNT</span>(*) <span class="sql-keyword">AS</span> episode_count,<br>
+                    &nbsp;&nbsp;<span class="sql-function">MAX</span>(adoption_pct_at_start) <span class="sql-keyword">AS</span> adoption_pct<br>
+                    <span class="sql-keyword">FROM</span> episode_fact<br>
+                    <span class="sql-keyword">GROUP BY</span> episode_start_month<br>
+                    <span class="sql-keyword">ORDER BY</span> month_key
+                </div>
+            </div>
+        </div>
+        
+        <div class="arrow-down">↓</div>
+        
+        <!-- PANEL 4: THE ANSWER -->
+        <div class="panel">
+            <div class="panel-header">
+                <div class="panel-number">4</div>
+                <div class="panel-title">The Answer: Board-Ready Insights</div>
+            </div>
+            <div class="panel-subtitle">Simple query on data mart answers complex business question</div>
+            
+            <div style="background: #1e3a8a; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <div style="font-size: 1.2rem; color: #bfdbfe; margin-bottom: 10px;">
+                    <strong>Board Question:</strong> Are Cerebral outcomes converging toward Resilience Lab baseline after methodology training?
+                </div>
+                <div class="insight-value">
+                    r = -0.92
+                </div>
+                <div style="text-align: center; font-size: 1.1rem; color: #bfdbfe;">
+                    Strong correlation between adoption and outcome improvement
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="finalChart" width="6" height="3" style="display: block; box-sizing: border-box; height: 3px; width: 6px;"></canvas>
+            </div>
+            
+            <div style="margin-top: 30px; padding: 20px; background: #065f46; border-radius: 8px;">
+                <div style="font-weight: 600; margin-bottom: 10px; color: #d1fae5;">Strategic Value Demonstrated:</div>
+                <div style="color: #d1fae5;">• Incompatible sources integrated through UDM (not custom ETL)</div>
+                <div style="color: #d1fae5;">• MDM as architectural consequence (not separate $20M project)</div>
+                <div style="color: #d1fae5;">• Board question answered with simple SQL (not analyst bottleneck)</div>
+                <div style="color: #d1fae5;">• Dose-response proves causality (not just correlation)</div>
+                <div style="color: #d1fae5;">• Scales to any future integration (acquisitions, partnerships, wearables)</div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const months = ['Jan 24', 'Feb 24', 'Mar 24', 'Apr 24', 'May 24', 'Jun 24', 
+                       'Jul 24', 'Aug 24', 'Sep 24', 'Oct 24', 'Nov 24', 'Dec 24',
+                       'Jan 25', 'Feb 25', 'Mar 25', 'Apr 25', 'May 25', 'Jun 25', 
+                       'Jul 25', 'Aug 25', 'Sep 25', 'Oct 25', 'Nov 25', 'Dec 25'];
+        
+        const phq9Data = [14.20, 14.00, 13.90, 13.70, 13.50, 13.30, 13.20, 13.00, 12.80, 12.70, 12.50, 12.30,
+                         11.80, 11.20, 10.50, 9.90, 9.30, 8.80, 8.40, 8.00, 7.60, 7.30, 7.00, 6.80];
+        
+        const counterfactual = [null, null, null, null, null, null, null, null, null, null, null, null,
+                               12.14, 11.98, 11.82, 11.66, 11.50, 11.34, 11.18, 11.02, 10.86, 10.70, 10.54, 10.38];
+        
+        const adoption = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                         5, 15, 25, 35, 45, 55, 65, 75, 83, 90, 95, 98];
+        
+        const ctx = document.getElementById('finalChart').getContext('2d');
+        
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: months,
+                datasets: [
+                    {
+                        type: 'bar',
+                        label: 'Provider Adoption %',
+                        data: adoption,
+                        backgroundColor: 'rgba(16, 185, 129, 0.3)',
+                        borderColor: 'rgba(16, 185, 129, 0.5)',
+                        borderWidth: 1,
+                        yAxisID: 'y1',
+                        order: 3
+                    },
+                    {
+                        type: 'line',
+                        label: 'Individual Therapy (projected)',
+                        data: counterfactual,
+                        borderColor: '#9ca3af',
+                        borderWidth: 2,
+                        borderDash: [5, 5],
+                        pointRadius: 0,
+                        fill: false,
+                        yAxisID: 'y',
+                        order: 2
+                    },
+                    {
+                        type: 'line',
+                        label: 'Integrated Care (actual)',
+                        data: phq9Data,
+                        borderColor: '#3b82f6',
+                        borderWidth: 3,
+                        pointRadius: 4,
+                        pointBackgroundColor: '#3b82f6',
+                        fill: false,
+                        yAxisID: 'y',
+                        order: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            color: '#d1d5db'
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        type: 'linear',
+                        position: 'left',
+                        min: 0,
+                        max: 18,
+                        title: {
+                            display: true,
+                            text: 'Mean PHQ-9 Score',
+                            color: '#d1d5db'
+                        },
+                        ticks: {
+                            color: '#9ca3af'
+                        },
+                        grid: {
+                            color: '#4b5563'
+                        }
+                    },
+                    y1: {
+                        type: 'linear',
+                        position: 'right',
+                        min: 0,
+                        max: 100,
+                        title: {
+                            display: true,
+                            text: 'Adoption %',
+                            color: '#d1d5db'
+                        },
+                        ticks: {
+                            color: '#9ca3af'
+                        },
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: '#9ca3af'
+                        },
+                        grid: {
+                            color: '#4b5563'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body></html>
