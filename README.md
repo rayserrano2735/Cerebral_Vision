@@ -35,7 +35,7 @@ This approach demonstrates the **dual capability required at the Director level*
 ### For Executive Leadership
 
 **Explore the Interactive Demo:**
-1. Open [UDM Architecture Flow](https://htmlpreview.github.io/?https://github.com/rayserrano2735/Cerebral_Vision/blob/main/docs/UDM_Instance_Model.html) to see the interactive visualization
+1. Open [UDM Architecture Flow](https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/UDM_Instance_Model.html) to see the interactive visualization
 2. See how incompatible systems integrate through Universal Data Model patterns
 3. Understand the path from source data chaos to board-ready insights
 
@@ -53,7 +53,7 @@ This approach demonstrates the **dual capability required at the Director level*
 ### For Technical Leadership
 
 **Understand Architecture:**
-1. Explore the [Interactive UDM Demo](https://htmlpreview.github.io/?https://github.com/rayserrano2735/Cerebral_Vision/blob/main/docs/UDM_Instance_Model.html) to see integration patterns
+1. Explore the [Interactive UDM Demo](https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/UDM_Instance_Model.html) to see integration patterns
 2. Review the [Technical Tutorial](docs/snowflake_hipaa_complete_setup.md) for implementation details
 3. Review technology stack and integration points
 4. Assess compatibility with existing systems
@@ -122,7 +122,7 @@ A detailed compliance-focused document explaining:
 
 ### Interactive Demonstrations
 
-#### [UDM Architecture Flow: Source to Insight](https://htmlpreview.github.io/?https://github.com/rayserrano2735/Cerebral_Vision/blob/main/docs/UDM_Instance_Model.html)
+#### [UDM Architecture Flow: Source to Insight](https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/UDM_Instance_Model.html)
 **An interactive visual demonstration of Universal Data Model methodology solving real integration challenges.**
 
 This live HTML demonstration shows:
