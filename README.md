@@ -50,7 +50,7 @@ This approach demonstrates the **dual capability required at the Director level*
 **Review Strategic Materials:**
 1. View the [Executive Presentation](https://www.canva.com/design/DAG2XGX5ADk/wUW0MqBrbL2ArHxt29Mdvg/view?utm_content=DAG2XGX5ADk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) for visual overview
    > *Tip: Choose "Continue in browser" to view without signing in, or open in Canva if you have an account*
-2. Read the [Healthcare Data & AI Platform Vision](https://raw.githubusercontent.com/rayserrano2735/Cerebral_Vision/refs/heads/main/docs/Cerebral_Vision.md) for detailed narrative
+2. Read the [Healthcare Data & AI Platform Vision](https://github.com/rayserrano2735/Cerebral_Vision/blob/main/docs/Cerebral_Vision.md) for detailed narrative
 3. Review the implementation timeline and resource requirements
 4. Consider alignment with organizational priorities and board commitments
 
@@ -92,7 +92,7 @@ This approach demonstrates the **dual capability required at the Director level*
 
 ### Strategic Documents
 
-#### [Healthcare Data & AI Platform Vision](https://raw.githubusercontent.com/rayserrano2735/Cerebral_Vision/refs/heads/main/docs/Cerebral_Vision.md)
+#### [Healthcare Data & AI Platform Vision](https://github.com/rayserrano2735/Cerebral_Vision/blob/main/docs/Cerebral_Vision.md)
 A comprehensive strategic vision document that outlines:
 - **AscendAI Platform**: A unified data and AI architecture for mental healthcare
 - **Clinical Decision Integrity**: Automated compliance monitoring for clinical workflows
