@@ -27,9 +27,9 @@ This approach demonstrates the **dual capability required at the Director level*
 
 ## What's Inside
 
-### 📋 Strategic Documents
+### ðŸ“‹ Strategic Documents
 
-#### [Healthcare Data & AI Platform Vision](docs/cerebral_healthcare_data_ai_vision.md)
+#### [Healthcare Data & AI Platform Vision](https://raw.githubusercontent.com/rayserrano2735/Cerebral_Vision/main/docs/Cerebral_Vision.pdf)
 A comprehensive strategic vision document that outlines:
 - **AscendAI Platform**: A unified data and AI architecture for mental healthcare
 - **Clinical Decision Integrity**: Automated compliance monitoring for clinical workflows
@@ -66,7 +66,7 @@ A detailed compliance-focused document explaining:
 - Marc Goldberg, President
 - Jacqueline Kniska, Chief Compliance Officer
 
-### 🎯 Interactive Demonstrations
+### ðŸŽ¯ Interactive Demonstrations
 
 #### [UDM Architecture Flow: Source to Insight](docs/UDM_Instance_Model.html)
 **An interactive visual demonstration of Universal Data Model methodology solving real integration challenges.**
@@ -102,7 +102,7 @@ This live HTML demonstration shows:
 - Answers complex board questions with simple SQL
 - **Open the HTML file in your browser to explore the interactive model**
 
-### 🛠️ Technical Documentation
+### ðŸ› ï¸ Technical Documentation
 
 #### [Snowflake HIPAA Implementation Tutorial](docs/snowflake_hipaa_complete_setup.md)
 A comprehensive technical tutorial covering:
@@ -120,7 +120,25 @@ A comprehensive technical tutorial covering:
 - Compliance validation queries
 - Oracle Label Security-style implementation patterns
 
-### 🗂️ Data Model & Architecture *(Coming Soon)*
+### ðŸ› ï¸ Technical Documentation
+
+#### [Snowflake HIPAA Implementation Tutorial](docs/snowflake_hipaa_complete_setup.md)
+A comprehensive technical tutorial covering:
+- **Complete Setup**: Step-by-step Snowflake configuration for HIPAA compliance
+- **Security Controls**: MFA, network policies, encryption, and access controls
+- **Healthcare Data Model**: Reference tables for patients, encounters, diagnoses, procedures
+- **Row-Level Security**: Provider-patient access restrictions
+- **Dynamic Data Masking**: PHI protection by role
+- **Audit Logging**: Comprehensive monitoring and compliance validation
+- **Best Practices**: Ongoing governance and maintenance procedures
+
+**Technical Highlights:**
+- Production-ready SQL code for all security features
+- Healthcare-specific RBAC hierarchy
+- Compliance validation queries
+- Oracle Label Security-style implementation patterns
+
+### ðŸ—‚ï¸ Data Model & Architecture *(Coming Soon)*
 
 **Interactive Data Model Explorer**  
 A fully browsable ErStudio data model featuring:
@@ -310,10 +328,10 @@ Mental healthcare organizations face unprecedented challenges:
 
 | Requirement | Implementation | Status |
 |------------|----------------|---------|
-| **Access Control** | Role-based access, MFA, row-level security | ✅ Complete |
-| **Audit Controls** | Comprehensive logging, 365+ day retention | ✅ Complete |
-| **Integrity Controls** | Time Travel, Fail-Safe, change tracking | ✅ Complete |
-| **Transmission Security** | TLS 1.2+, private connectivity options | ✅ Complete |
+| **Access Control** | Role-based access, MFA, row-level security | âœ… Complete |
+| **Audit Controls** | Comprehensive logging, 365+ day retention | âœ… Complete |
+| **Integrity Controls** | Time Travel, Fail-Safe, change tracking | âœ… Complete |
+| **Transmission Security** | TLS 1.2+, private connectivity options | âœ… Complete |
 
 ### Monitoring & Oversight Support
 - **DOJ Monitoring**: Automated clinical decision audit trails
@@ -401,7 +419,7 @@ Mental healthcare organizations face unprecedented challenges:
 
 ## Project Status
 
-### ✅ Completed
+### âœ… Completed
 - Strategic vision document (narrative)
 - Executive presentation deck (slides)
 - HIPAA compliance executive briefing
@@ -410,13 +428,13 @@ Mental healthcare organizations face unprecedented challenges:
 - Architecture design and technology selection
 - Implementation roadmap
 
-### 🚧 In Progress
+### ðŸš§ In Progress
 - **Interactive Data Model**: ErStudio browsable model with metadata
 - **Data Model Specifications**: Complete DDL with foreign key relationships
 - **Integration Patterns**: API and data flow documentation
 - **Reference Implementations**: Code samples and configurations
 
-### 📋 Planned
+### ðŸ“‹ Planned
 - **Technical Tutorial**: Step-by-step HIPAA implementation guide
 - **Deployment Automation**: Infrastructure-as-code templates
 - **Testing Frameworks**: Compliance validation and security testing
