@@ -29,7 +29,7 @@ This approach demonstrates the **dual capability required at the Director level*
 
 ### ðŸ“‹ Strategic Documents
 
-#### [Healthcare Data & AI Platform Vision](https://raw.githubusercontent.com/rayserrano2735/Cerebral_Vision/main/docs/Cerebral_Vision.pdf)
+#### [Healthcare Data & AI Platform Vision](https://github.com/rayserrano2735/Cerebral_Vision/blob/main/docs/Cerebral_Vision.pdf)
 A comprehensive strategic vision document that outlines:
 - **AscendAI Platform**: A unified data and AI architecture for mental healthcare
 - **Clinical Decision Integrity**: Automated compliance monitoring for clinical workflows
