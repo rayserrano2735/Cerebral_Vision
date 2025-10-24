@@ -1,7 +1,7 @@
 # Cerebral Vision: Healthcare Data & AI Strategy
 ## Transforming Mental Healthcare Through Intelligent Data Architecture
 
-<iframe src="https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/money_shot_interactive.html" width="100%" height="800" frameborder="0" style="border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"></iframe>
+<iframe src="https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/money_shot_interactive.html" width="100%" height="720" frameborder="0" style="border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"></iframe>
 
 > **THE NORTH STAR VISUALIZATION**  
 > This is the board-ready insight AscendAI will deliver: Statistical proof that Cerebral outcomes converge toward Resilience Lab's proven baseline as methodology adoption increases across the combined organization. The platform transforms incompatible source systems into this single, actionable answer that validates merger ROI. Every architectural decision, every integration pattern, and every implementation phase drives toward enabling this visualization with real production data.
@@ -42,7 +42,7 @@ This approach demonstrates the **dual capability required at the Director level*
 ### For Executive Leadership
 
 **Explore the Interactive Demo:**
-1. Open [UDM Architecture Flow](https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/UDM_Instance_Model.html) to see the interactive visualization
+1. Open [UDM Architecture Flow: Source to Insight](https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/UDM_Instance_Model.html) to see the interactive visualization
    > *Tip: Right-click and "Open in New Tab" to keep this README open for reference*
 2. See how incompatible systems integrate through Universal Data Model patterns
 3. Understand the path from source data chaos to board-ready insights
@@ -55,14 +55,14 @@ This approach demonstrates the **dual capability required at the Director level*
 4. Consider alignment with organizational priorities and board commitments
 
 **Review Compliance Framework:**
-1. Read the HIPAA Compliance Executive Briefing *(Coming Soon)*
+1. Read the [HIPAA Compliance Executive Briefing](./snowflake_hipaa_compliance_executive_briefing.md)
 2. Review risk mitigation and cost-benefit analysis
 3. Assess regulatory readiness for DOJ/FTC oversight
 
 ### For Technical Leadership
 
 **Understand Architecture:**
-1. Explore the [Interactive UDM Demo](https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/UDM_Instance_Model.html) to see integration patterns
+1. Explore the [UDM Architecture Flow: Source to Insight](https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/UDM_Instance_Model.html) to see integration patterns
 2. Review the Technical Tutorial for implementation details *(Coming Soon)*
 3. Review technology stack and integration points
 4. Assess compatibility with existing systems
@@ -117,7 +117,7 @@ A comprehensive strategic vision document that outlines:
 **Format:** Interactive Canva presentation for executive and board meetings  
 > *Tip: Choose "Continue in browser" to view without signing in, or open in Canva if you have an account*
 
-#### HIPAA Compliance Executive Briefing *(Coming Soon)*
+#### [HIPAA Compliance Executive Briefing](./snowflake_hipaa_compliance_executive_briefing.md)
 A detailed compliance-focused document explaining:
 - **Technical Safeguards**: Complete HIPAA Security Rule implementation
 - **Risk Mitigation**: 85-95% reduction in breach probability
