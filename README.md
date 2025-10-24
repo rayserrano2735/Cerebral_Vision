@@ -49,6 +49,7 @@ This approach demonstrates the **dual capability required at the Director level*
 
 **Review Strategic Materials:**
 1. View the [Executive Presentation](https://www.canva.com/design/DAG2XGX5ADk/wUW0MqBrbL2ArHxt29Mdvg/view?utm_content=DAG2XGX5ADk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) for visual overview
+   > *Tip: Choose "Continue in browser" to view without signing in, or open in Canva if you have an account*
 2. Read the [Healthcare Data & AI Platform Vision](docs/cerebral_healthcare_data_ai_vision.md) for detailed narrative
 3. Review the implementation timeline and resource requirements
 4. Consider alignment with organizational priorities and board commitments
@@ -113,7 +114,8 @@ A comprehensive strategic vision document that outlines:
 - Business value proposition and ROI framework
 - Implementation approach and timeline
 
-**Format:** PDF slide deck for executive presentations and board meetings
+**Format:** Interactive Canva presentation for executive and board meetings  
+> *Tip: Choose "Continue in browser" to view without signing in, or open in Canva if you have an account*
 
 #### [HIPAA Compliance Executive Briefing](docs/snowflake_hipaa_compliance_executive_briefing.md)
 A detailed compliance-focused document explaining:
