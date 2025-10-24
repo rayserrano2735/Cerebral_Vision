@@ -30,12 +30,20 @@ A thoughtfully integrated architecture using industry-standard components (Snowf
 
 This approach demonstrates the **dual capability required at the Director level** - strategic product thinking to drive business value alongside deep technical expertise to ensure successful implementation.
 
+---
+
+> **Questions or Need Clarification?**  
+> The materials presented here range from executive strategy to detailed technical architecture. Whether you need clarification on the UDM entity relationships in Panel 2, the statistical methodology behind the correlation analysis, or the strategic positioning of any component - we're ready to provide detailed explanations tailored to your specific interests and concerns.
+
+---
+
 ## Getting Started
 
 ### For Executive Leadership
 
 **Explore the Interactive Demo:**
 1. Open [UDM Architecture Flow](https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/UDM_Instance_Model.html) to see the interactive visualization
+   > *Tip: Right-click and "Open in New Tab" to keep this README open for reference*
 2. See how incompatible systems integrate through Universal Data Model patterns
 3. Understand the path from source data chaos to board-ready insights
 
