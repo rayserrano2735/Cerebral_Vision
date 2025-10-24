@@ -1,7 +1,7 @@
 # Cerebral Vision: Healthcare Data & AI Strategy
 ## Transforming Mental Healthcare Through Intelligent Data Architecture
 
-![Board Answer: Methodology Adoption Drives Outcome Convergence (r = -0.92)](https://github.com/rayserrano2735/Cerebral_Vision/blob/main/docs/slide_4_answer_board_insights.png)
+![Board Answer: Methodology Adoption Drives Outcome Convergence (r = -0.92)](https://raw.githubusercontent.com/rayserrano2735/Cerebral_Vision/main/docs/slide_4_answer_board_insights.png)
 
 > **THE NORTH STAR VISUALIZATION**  
 > This is the board-ready insight AscendAI will deliver: Statistical proof that Cerebral outcomes converge toward Resilience Lab's proven baseline as methodology adoption increases across the combined organization. The platform transforms incompatible source systems into this single, actionable answer that validates merger ROI. Every architectural decision, every integration pattern, and every implementation phase drives toward enabling this visualization with real production data.
