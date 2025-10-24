@@ -48,7 +48,7 @@ This approach demonstrates the **dual capability required at the Director level*
 3. Understand the path from source data chaos to board-ready insights
 
 **Review Strategic Materials:**
-1. View the [Executive Presentation](docs/Presentation%20-%20Unified%20Healthcare%20Platform%20Product%20Suite.pdf) for visual overview
+1. View the [Executive Presentation](https://www.canva.com/design/DAG2XGX5ADk/wUW0MqBrbL2ArHxt29Mdvg/view?utm_content=DAG2XGX5ADk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) for visual overview
 2. Read the [Healthcare Data & AI Platform Vision](docs/cerebral_healthcare_data_ai_vision.md) for detailed narrative
 3. Review the implementation timeline and resource requirements
 4. Consider alignment with organizational priorities and board commitments
@@ -105,7 +105,7 @@ A comprehensive strategic vision document that outlines:
 - Enables evidence-based care delivery at scale
 - Reduces operational complexity through automation
 
-#### [Unified Healthcare Platform Product Suite - Presentation](docs/Presentation%20-%20Unified%20Healthcare%20Platform%20Product%20Suite.pdf)
+#### [Unified Healthcare Platform Product Suite - Presentation](https://www.canva.com/design/DAG2XGX5ADk/wUW0MqBrbL2ArHxt29Mdvg/view?utm_content=DAG2XGX5ADk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 **Executive presentation deck** covering:
 - Visual overview of the AscendAI platform architecture
 - Product suite components and capabilities
