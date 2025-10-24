@@ -168,13 +168,13 @@ The Platform Product Core includes the capabilities that provide value to stakeh
 
 **dbt Semantic Layer: **Business metrics definitions that serve as a single source of truth for all metrics across the organization.
 
-**Domain Analytics: **Four specialized data marts (Clinical Outcomes, Clinician Development, Operational Integration, Financial), designed to meet specific stakeholder needs.
+**Domain Analytics:** Four specialized data marts (Clinical Outcomes, Clinician Development, Operational Integration, Financial), designed to meet specific stakeholder needs.
 
-**Governance Policies: **HIPAA enforcement at the query level ensuring consistent application of minimum necessary standards.
+**Governance Policies:** HIPAA enforcement at the query level ensuring consistent application of minimum necessary standards.
 
 ## Analytics & AI Platform:
 
-**Looker: **Self-service analytics features enable stakeholders to build custom views with easy-to-use interfaces. The platform's semantic layer architecture deliberately stays independent of any specific visualization tool—a key design choice that is becoming more important each quarter. Critical cloud outages increased by 18% in 2024, with Google Cloud seeing a 57% rise in downtime hours, including six major outages lasting over 10 hours (Parametrix Cloud Outage Risk Report 2024).
+**Looker:** Self-service analytics features enable stakeholders to build custom views with easy-to-use interfaces. The platform's semantic layer architecture deliberately stays independent of any specific visualization tool—a key design choice that is becoming more important each quarter. Critical cloud outages increased by 18% in 2024, with Google Cloud seeing a 57% rise in downtime hours, including six major outages lasting over 10 hours (Parametrix Cloud Outage Risk Report 2024).
 
 The June 2025 incident highlighted this risk when Google Cloud Platform's global outage took down multiple major internet services without an estimated resolution time, while AWS continued to operate normally (CNBC, June 2025). For organizations that rely exclusively on visualization capabilities as their primary architectural commitment to a specific cloud provider, such incidents shift from infrastructure challenges to complete analytics blackouts—especially when leadership needs data visibility most.
 
@@ -194,7 +194,7 @@ Importantly, HIPAA compliance is embedded throughout rather than being a separat
 
 This architectural approach shifts compliance from quarterly audit cycles to real-time visibility, from IT-controlled reporting to independent verification, and from reactive problem discovery to proactive drift detection. The compliance foundation makes it structurally difficult for any platform component to violate compliance standards, rather than relying solely on procedural controls.
 
-**Technical Stack Note: **The technology stack is crafted for quick executive overviews, with detailed technical information available upon request during stakeholder presentations.
+**Technical Stack Note:** The technology stack is crafted for quick executive overviews, with detailed technical information available upon request during stakeholder presentations.
 
 ### Phase 4: Analytical and Operational AI Agentics - Current Market Reality
 
@@ -204,13 +204,13 @@ The competitive landscape requires attention to agentic capabilities even as cor
 
 ### Phase 4 Parallel Track Approach:
 
-**Timing: **Research begins in Month 7 (start of Phase 2), with development from Months 13 to 18 (early part of Phase 3)
+**Timing:** Research begins in Month 7 (start of Phase 2), with development from Months 13 to 18 (early part of Phase 3)
 
-**Scope: **Detecting medication interactions, automating care coordination, optimizing appointment scheduling, and engaging patients directly through wearable device data.
+**Scope:** Detecting medication interactions, automating care coordination, optimizing appointment scheduling, and engaging patients directly through wearable device data.
 
-**Risk mitigation: **Parallel track ensures core Phases 1-3 deliverables stay on schedule regardless of Phase 4 results.
+**Risk mitigation:** Parallel track ensures core Phases 1-3 deliverables stay on schedule regardless of Phase 4 results.
 
-**Market Positioning: **Shows Cerebral's dedication to leading innovation while maintaining a focus on execution discipline.
+**Market Positioning:** Shows Cerebral's dedication to leading innovation while maintaining a focus on execution discipline.
 
 The AscendAI architecture incorporates Phase 4 integration points (dbt MCP Server, Snowflake Cortex AI agentic capabilities) to prevent technical debt if agentic capabilities are developed. This architectural awareness ensures that Phase 4 can be implemented as a natural evolution rather than requiring a platform redesign.
 
@@ -220,9 +220,9 @@ The roadmap addresses both immediate integration needs and long-term transformat
 
 Each phase has a specific main deliverable that determines success:
 
-**Phase 1 Primary Deliverable: TRUST **in Data Quality & Visibility
+**Phase 1 Primary Deliverable: TRUST** in Data Quality & Visibility
 
-**Phase 2 Main Deliverable: EMPOWERMENT **through self-service insights
+**Phase 2 Main Deliverable: EMPOWERMENT** through self-service insights
 
 **Phase 3 Primary Deliverable: DIFFERENTIATION** through outcome evidence
 
@@ -332,9 +332,9 @@ Success should be measured by metrics that verify whether the merger is meeting 
 
 ## North Star Metric: Time to Trusted Insight
 
-**Definition: **The amount of time that passes from when a stakeholder asks a question about integration progress, clinical outcomes, or operational performance until they can confidently make a decision based on reliable data from the platform.
+**Definition:** The amount of time that passes from when a stakeholder asks a question about integration progress, clinical outcomes, or operational performance until they can confidently make a decision based on reliable data from the platform.
 
-**Current State (Pre-AscendAI): **Days to weeks for most executive questions; weeks to months for complex analytical questions; many questions are unanswerable due to data silos.
+**Current State (Pre-AscendAI):** Days to weeks for most executive questions; weeks to months for complex analytical questions; many questions are unanswerable due to data silos.
 
 **Target State (Post-Phase 1):** Hours for executive integration questions. **Target State (Post-Phase 2):** Minutes for clinician and operations questions. **Target State (Post-Phase 3):** Real-time proactive insights provided before questions come up.
 
@@ -384,7 +384,7 @@ Trust indicators are the foundation of platform value. Without trust, adoption m
 
 ## Cluster 3: Integration Health (All Phases)
 
-** Outcome convergence: **Are the clinical results for former Resilience Lab patients maintained or improved after integration? (comparative outcome analysis)
+**Outcome convergence:** Are the clinical results for former Resilience Lab patients maintained or improved after integration? (comparative outcome analysis)
 
 **Cultural indicators: **Clinician satisfaction scores, retention rates, training engagement levels
 
