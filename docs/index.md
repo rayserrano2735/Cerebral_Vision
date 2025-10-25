@@ -12,6 +12,10 @@
 
 This repository contains strategic vision and compliance documentation for implementing a modern, HIPAA-compliant data and AI platform for mental healthcare delivery. The approach combines proven enterprise data architecture patterns with cutting-edge AI capabilities to address the unique challenges facing mental healthcare organizations in 2025.
 
+Mental healthcare organizations today face unprecedented challenges: DOJ monitoring for clinical decision integrity, FTC oversight for privacy protection, post-merger system integration across incompatible platforms, and the imperative to demonstrate measurable outcomes to payers and regulators. Traditional approaches to data management cannot meet these demands. Legacy systems scatter critical information across disconnected platforms, manual compliance processes create risk and operational burden, and inconsistent clinical workflows prevent evidence-based care at scale.
+
+The AscendAI platform addresses these challenges through intelligent data architecture that unifies disparate sources, automates compliance monitoring, and enables real-time visibility into clinical and business operations. By implementing Universal Data Model patterns proven across healthcare enterprises, the platform transforms post-merger integration from a multi-year technical project into a strategic capability that delivers immediate business value. The result is not just regulatory compliance and operational efficiency—it's the ability to demonstrate clinical effectiveness, optimize care delivery, and make data-driven decisions that drive organizational success.
+
 ### About AscendAI
 
 **AscendAI** represents a **product management approach** to the platform vision - not a pre-existing vendor product, but a complete solution framework with market-ready positioning.
@@ -37,105 +41,15 @@ This approach demonstrates the **dual capability required at the Director level*
 
 ---
 
-## Getting Started
-
-### For Executive Leadership
-
-**Explore the Interactive Demo:**
-1. Open [UDM Architecture Flow: Source to Insight](https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/UDM_Instance_Model.html) to see the interactive visualization
-   > *Tip: Right-click and "Open in New Tab" to keep this README open for reference*
-2. See how incompatible systems integrate through Universal Data Model patterns
-3. Understand the path from source data chaos to board-ready insights
-
-**Review Strategic Materials:**
-1. View the [Executive Presentation](https://www.canva.com/design/DAG2XGX5ADk/wUW0MqBrbL2ArHxt29Mdvg/view?utm_content=DAG2XGX5ADk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) for visual overview
-   > *Tip: Choose "Continue in browser" to view without signing in, or open in Canva if you have an account*
-2. Read the [Healthcare Data & AI Platform Vision](./Cerebral_Vision.md) for detailed narrative
-3. Review the implementation timeline and resource requirements
-4. Consider alignment with organizational priorities and board commitments
-
-**Review Compliance Framework:**
-1. Read the [HIPAA Compliance Executive Briefing](./snowflake_hipaa_compliance_executive_briefing.md)
-2. Review risk mitigation and cost-benefit analysis
-3. Assess regulatory readiness for DOJ/FTC oversight
-
-### For Technical Leadership
-
-**Understand Architecture:**
-1. Explore the [UDM Architecture Flow: Source to Insight](https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/UDM_Instance_Model.html) to see integration patterns
-2. Review the Technical Tutorial for implementation details *(Coming Soon)*
-3. Review technology stack and integration points
-4. Assess compatibility with existing systems
-5. Evaluate resource requirements and skill gaps
-
-**Plan Implementation:**
-1. Review phased approach and deliverables
-2. Identify quick wins and prioritize features
-3. Coordinate with compliance and security teams
-
-### For Compliance Leadership
-
-**Evaluate Controls:**
-1. Review HIPAA Security Rule compliance matrix
-2. Assess automated compliance monitoring capabilities
-3. Consider integration with existing compliance programs
-
-**Plan Governance:**
-1. Review ongoing governance requirements
-2. Assess reporting capabilities for regulatory needs
-3. Coordinate with legal and privacy teams
-
----
-
-
 ## What's Inside
 
-### Strategic Documents
+### UDM Architecture Flow: Source to Insight
 
-#### [Healthcare Data & AI Platform Vision](./Cerebral_Vision.md)
-A comprehensive strategic vision document that outlines:
-- **AscendAI Platform**: A unified data and AI architecture for mental healthcare
-- **Clinical Decision Integrity**: Automated compliance monitoring for clinical workflows
-- **Post-Merger Integration**: Data architecture for combining legacy systems
-- **Quarterly Board Reporting**: Executive dashboards and KPI tracking
-- **Implementation Roadmap**: Phased approach with clear milestones and deliverables
+**[View the visual demonstration](https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/UDM_Instance_Model.html)**
 
-**Key Highlights:**
-- Addresses post-merger integration and transformation needs
-- Supports DOJ monitoring and FTC audit requirements
-- Enables evidence-based care delivery at scale
-- Reduces operational complexity through automation
+> *Tip: Right-click and "Open in New Tab" to keep this page open for reference*
 
-#### [Unified Healthcare Platform Product Suite - Presentation](https://www.canva.com/design/DAG2XGX5ADk/wUW0MqBrbL2ArHxt29Mdvg/view?utm_content=DAG2XGX5ADk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-**Executive presentation deck** covering:
-- Visual overview of the AscendAI platform architecture
-- Product suite components and capabilities
-- Integration strategy and technology stack
-- Business value proposition and ROI framework
-- Implementation approach and timeline
-
-**Format:** Interactive Canva presentation for executive and board meetings  
-> *Tip: Choose "Continue in browser" to view without signing in, or open in Canva if you have an account*
-
-#### [HIPAA Compliance Executive Briefing](./snowflake_hipaa_compliance_executive_briefing.md)
-A detailed compliance-focused document explaining:
-- **Technical Safeguards**: Complete HIPAA Security Rule implementation
-- **Risk Mitigation**: 85-95% reduction in breach probability
-- **Audit Readiness**: Instant response to OCR audit requests
-- **Regulatory Monitoring**: Support for DOJ and FTC oversight requirements
-- **Cost-Benefit Analysis**: ROI and TCO compared to traditional approaches
-
-**Prepared for:**
-- Brian Reinken, CEO
-- Marc Goldberg, President
-- Jacqueline Kniska, Chief Compliance Officer
-
-### Interactive Demonstrations
-
-#### [UDM Architecture Flow: Source to Insight](https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/UDM_Instance_Model.html)
-**An interactive visual demonstration of Universal Data Model methodology solving real integration challenges.**
-
-This live HTML demonstration shows:
+A visual demonstration of Universal Data Model methodology solving real integration challenges through four panels:
 
 **Panel 1: The Problem**
 - Two incompatible source systems (Resilience Lab vs. Cerebral)
@@ -144,7 +58,7 @@ This live HTML demonstration shows:
 
 **Panel 2: The Solution**
 - Full Universal Data Model with Entity Relationship Diagram
-- **Instance-level data** showing actual values flowing through the model
+- Instance-level data showing actual values flowing through the model
 - Visual arrows demonstrating foreign key relationships
 - Integration of PERSON, ORGANIZATION, PARTY_ROLE, EPISODE, DELIVERY patterns
 
@@ -164,281 +78,88 @@ This live HTML demonstration shows:
 - Shows Master Data Management as architectural consequence (not $20M project)
 - Demonstrates scalability to any future integration (acquisitions, partnerships)
 - Answers complex board questions with simple SQL
-- **Open the HTML file in your browser to explore the interactive model**
 
-### Technical Documentation
-
-#### Snowflake HIPAA Implementation Tutorial *(Coming Soon)*
-A comprehensive technical tutorial covering:
-- **Complete Setup**: Step-by-step Snowflake configuration for HIPAA compliance
-- **Security Controls**: MFA, network policies, encryption, and access controls
-- **Healthcare Data Model**: Reference tables for patients, encounters, diagnoses, procedures
-- **Row-Level Security**: Provider-patient access restrictions
-- **Dynamic Data Masking**: PHI protection by role
-- **Audit Logging**: Comprehensive monitoring and compliance validation
-- **Best Practices**: Ongoing governance and maintenance procedures
-
-**Technical Highlights:**
-- Production-ready SQL code for all security features
-- Healthcare-specific RBAC hierarchy
-- Compliance validation queries
-- Oracle Label Security-style implementation patterns
-
-
-### Data Model & Architecture *(Coming Soon)*
-
-**Interactive Data Model Explorer**  
-A fully browsable ErStudio data model featuring:
-- **Visual Navigation**: Explore entity relationships interactively
-- **Metadata Popups**: Click any table or column for detailed definitions
-- **Universal Data Model Patterns**: Industry-standard healthcare data patterns
-- **Compliance Mapping**: PHI identification and classification tags
-- **Lineage Tracking**: Complete data flow and dependency visualization
-
-This enterprise-grade deliverable demonstrates:
-- Proven UDM methodology across healthcare domains
-- Complete referential integrity with enforced foreign keys
-- Professional documentation standards used by Fortune 500 companies
-- Immediate accessibility for both technical and business stakeholders
+> *For detailed exploration of the UDM integration layer (Panel 2), see the Browsable Data Model below*
 
 ---
 
-## Problem Statement
+### AscendAI Platform Product Suite - Presentation
 
-Mental healthcare organizations face unprecedented challenges:
+**[View the executive presentation](https://www.canva.com/design/DAG2XGX5ADk/wUW0MqBrbL2ArHxt29Mdvg/view?utm_content=DAG2XGX5ADk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)**
 
-### Regulatory Pressures
-- DOJ monitoring for clinical decision integrity
-- FTC oversight for privacy and data protection (up to 20 years)
-- HIPAA compliance with complete audit trails
-- State-level regulations and reporting requirements
+> *Tip: Choose "Continue in browser" to view without signing in, or open in Canva if you have an account*
 
-### Operational Complexity
-- Post-merger system integration
-- Legacy data scattered across multiple platforms
-- Manual compliance processes
-- Inconsistent clinical workflows
+Executive presentation deck covering:
+- Visual overview of the AscendAI platform architecture
+- Product suite components and capabilities
+- Integration strategy and technology stack
+- Business value proposition and ROI framework
+- Implementation approach and timeline
 
-### Business Imperatives
-- Demonstrate outcomes to payers and regulators
-- Scale evidence-based care delivery
-- Reduce operational overhead
-- Enable data-driven decision making
+**Format:** Interactive Canva presentation for executive and board meetings
 
 ---
 
-## Solution Architecture
+### HIPAA Compliance Executive Briefing
 
-### Core Principles
+**[Read the compliance briefing](./snowflake_hipaa_compliance_executive_briefing.md)**
 
-**1. Compliance by Design**
-- HIPAA-compliant from day one
-- Automated audit trails for all clinical decisions
-- Row-level security enforcing minimum necessary access
-- Dynamic data masking protecting PHI
-- Continuous compliance monitoring
+A detailed compliance-focused document explaining:
+- **Technical Safeguards**: Complete HIPAA Security Rule implementation
+- **Risk Mitigation**: 85-95% reduction in breach probability
+- **Audit Readiness**: Instant response to OCR audit requests
+- **Regulatory Monitoring**: Support for DOJ and FTC oversight requirements
+- **Cost-Benefit Analysis**: ROI and TCO compared to traditional approaches
 
-**2. Clinical Decision Integrity**
-- Evidence-based care protocols embedded in data layer
-- Automated alerts for high-risk patterns
-- Complete prescription audit trails
-- Clinical outcome tracking
-- Regulatory reporting automation
-
-**3. Unified Data Platform**
-- Single source of truth across merged organizations
-- Real-time data integration
-- Semantic layer providing consistent business logic
-- AI-powered insights and automation
-- Scalable cloud-native architecture
-
-**4. Operational Excellence**
-- Self-service analytics for authorized users
-- Automated compliance reporting
-- Executive dashboards with real-time KPIs
-- Reduced manual effort through intelligent automation
+**Prepared for:**
+- Brian Reinken, CEO
+- Marc Goldberg, President
+- Jacqueline Kniska, Chief Compliance Officer
 
 ---
 
-## Technology Stack
+### Healthcare Data & AI Platform Vision
 
-### Core Platform
-- **Snowflake**: HIPAA-compliant cloud data platform
-  - Enterprise edition with Business Associate Agreement
-  - Row-level security and dynamic data masking
-  - Time Travel for data protection and audit
-  - Comprehensive audit logging
-  
-### Data Transformation & Governance
-- **dbt (data build tool)**: Semantic layer and business logic
-  - Reusable data models
-  - Testing and documentation
-  - Lineage tracking
-  
-### AI & Intelligence
-- **Snowflake Cortex**: Production AI capabilities
-  - Natural language queries
-  - Anomaly detection
-  - Predictive analytics
-  
-### Compliance Automation
-- **Vanta**: Continuous compliance monitoring
-  - SOC 2 automation
-  - Policy enforcement
-  - Evidence collection
-  
-### Orchestration
-- **Airflow**: Workflow automation
-  - Data pipeline orchestration
-  - Scheduled reporting
-  - Alert management
+**[Read the comprehensive vision](./Cerebral_Platform_Vision_v7_CLEAN.md)**
+
+A comprehensive strategic vision document that outlines:
+- **AscendAI Platform**: A unified data and AI architecture for mental healthcare
+- **Clinical Decision Integrity**: Automated compliance monitoring for clinical workflows
+- **Post-Merger Integration**: Data architecture for combining legacy systems
+- **Quarterly Board Reporting**: Executive dashboards and KPI tracking
+- **Implementation Roadmap**: Phased approach with clear milestones and deliverables
+
+**Key Highlights:**
+- Addresses post-merger integration and transformation needs
+- Supports DOJ monitoring and FTC audit requirements
+- Enables evidence-based care delivery at scale
+- Reduces operational complexity through automation
 
 ---
 
-## Implementation Approach
+### Browsable Data Model
 
-### Phase 1: Foundation & Quick Wins (Weeks 1-4)
-**Goal:** Establish platform and deliver immediate value
+**[Explore the interactive data model](https://raw.githubusercontent.com/rayserrano2735/Cerebral_Vision/refs/heads/main/reports/data_model/index.htm)**
 
-**Deliverables:**
-- Snowflake environment with HIPAA controls
-- Executive dashboard for board reporting
-- Basic compliance automation
-- Core data integrations
+> *Tip: Right-click and "Open in New Tab" to explore while keeping this page open*
 
-**Outcomes:**
-- Q1 2026 board reporting capability
-- Automated compliance checks
-- Foundation for advanced features
+An interactive data model demonstrating Universal Data Model patterns and documentation standards:
 
-### Phase 2: Clinical Intelligence (Weeks 5-8)
-**Goal:** Enable clinical decision support
+**Navigation:**
+- The left pane displays a tree structure containing a **general comprehensive model** plus three focused sub-models: Sources Integration, Universal Data Model (UDM), and Data Marts
+- **Click on any model name in the tree** to view its entity-relationship diagram in the main display area
+- Within each model, click individual entities to view detailed metadata, columns, data types, and relationships
 
-**Deliverables:**
-- Clinical decision integrity monitoring
-- Prescription audit automation
-- Outcome tracking framework
-- Provider performance analytics
+**What's Shown:**
+- Entity-relationship diagrams illustrating UDM integration patterns
+- Sample metadata structure for tables, columns, and relationships
+- Healthcare-specific patterns: PERSON, PARTY_ROLE, EPISODE, DELIVERY, ASSESSMENT
+- Documentation approach using professional ErStudio format
 
-**Outcomes:**
-- DOJ monitoring support
-- Evidence for payer negotiations
-- Clinical quality improvements
-
-### Phase 3: Advanced Analytics & AI (Weeks 9-12)
-**Goal:** Scale insights and automation
-
-**Deliverables:**
-- Natural language query interface
-- Predictive analytics for outcomes
-- Churn prevention models
-- Automated anomaly detection
-
-**Outcomes:**
-- Self-service analytics
-- Proactive intervention capabilities
-- Operational efficiency gains
-
----
-
-## Business Value
-
-### Risk Mitigation
-- **85-95% reduction** in data breach probability
-- **90%+ reduction** in insider threat exposure
-- **Substantial reduction** in regulatory penalty risk
-- **Complete elimination** of unencrypted PHI
-
-### Cost Savings
-- **40-60% reduction** in security administration costs
-- **50-70% reduction** in compliance reporting effort
-- **Lower TCO** versus traditional database approaches
-- **Automated workflows** reducing manual effort
-
-### Revenue Enablement
-- **Faster payer contracting** through demonstrated outcomes
-- **Improved patient retention** via predictive analytics
-- **New market opportunities** enabled by compliance excellence
-- **Board confidence** through real-time visibility
-
-### Operational Excellence
-- **Real-time visibility** into clinical and business operations
-- **Automated compliance** reducing administrative burden
-- **Self-service analytics** empowering stakeholders
-- **Scalable architecture** supporting growth
-
----
-
-## Regulatory Compliance
-
-### HIPAA Security Rule Coverage
-
-| Requirement | Implementation | Status |
-|------------|----------------|---------|
-| **Access Control** | Role-based access, MFA, row-level security | ✓ Complete |
-| **Audit Controls** | Comprehensive logging, 365+ day retention | ✓ Complete |
-| **Integrity Controls** | Time Travel, Fail-Safe, change tracking | ✓ Complete |
-| **Transmission Security** | TLS 1.2+, private connectivity options | ✓ Complete |
-
-### Monitoring & Oversight Support
-- **DOJ Monitoring**: Automated clinical decision audit trails
-- **FTC Oversight**: Complete privacy and data handling transparency
-- **State Regulations**: Flexible reporting for multi-state compliance
-- **Payer Audits**: Instant access to outcome and quality metrics
-
----
-
-## Use Cases
-
-### Clinical Operations
-- **Prescription Monitoring**: Complete audit trail for controlled substances
-- **Clinical Pathways**: Adherence tracking for evidence-based protocols
-- **Outcome Measurement**: Standardized assessments and progress tracking
-- **Provider Performance**: Quality metrics and productivity analytics
-
-### Compliance & Risk
-- **Access Monitoring**: Real-time alerts for unusual PHI access patterns
-- **Policy Enforcement**: Automated checks for security policy compliance
-- **Incident Response**: Rapid breach investigation and scope determination
-- **Regulatory Reporting**: One-click generation of audit packages
-
-### Executive Management
-- **Board Reporting**: Real-time KPIs and strategic metrics
-- **Financial Analytics**: Revenue, cost, and margin visibility
-- **Growth Tracking**: Patient acquisition and retention metrics
-- **Merger Integration**: Progress tracking across combined organizations
-
-### Research & Analytics
-- **Population Health**: Aggregate analytics on de-identified data
-- **Treatment Effectiveness**: Comparative analysis of interventions
-- **Risk Stratification**: Predictive models for clinical outcomes
-- **Quality Improvement**: Continuous monitoring and optimization
-
----
-
-
-## Project Status
-
-### ✓ Completed
-- Strategic vision document (narrative)
-- Executive presentation deck (slides)
-- HIPAA compliance executive briefing
-- Interactive UDM demonstration (visual integration flow)
-- Technical implementation tutorial
-- Architecture design and technology selection
-- Implementation roadmap
-
-### In Progress
-- **Interactive Data Model**: ErStudio browsable model with metadata
-- **Data Model Specifications**: Complete DDL with foreign key relationships
-- **Integration Patterns**: API and data flow documentation
-- **Reference Implementations**: Code samples and configurations
-
-### Planned
-- **Technical Tutorial**: Step-by-step HIPAA implementation guide
-- **Deployment Automation**: Infrastructure-as-code templates
-- **Testing Frameworks**: Compliance validation and security testing
-- **Training Materials**: User guides and administration documentation
+**Purpose:**
+- Illustrates UDM methodology applied to healthcare integration challenges
+- Shows the documentation rigor and metadata standards that guide platform development
+- Supplements Panel 2 of the Instance Model with browsable technical detail
 
 ---
 
@@ -446,44 +167,14 @@ Mental healthcare organizations face unprecedented challenges:
 
 ### Author
 **Ray Serrano**  
-Principal Data Architect with 20+ years of experience in healthcare data systems and enterprise architecture. Harvard Master's degree in Information Management Systems with Data Science certification. Acknowledged in Len Silverston's "The Data Model Resource Book" Volume 3 for contributions to Universal Data Model patterns.
+Data Platform Product Leader with 20+ years architecting enterprise data solutions across financial services, telecommunications, healthcare, and retail sectors. This cross-industry perspective brings proven integration patterns from mature data environments to healthcare's unique regulatory and clinical challenges. Harvard Master's degree in Information Management Systems with Data Science certification. Acknowledged in Len Silverston's "The Data Model Resource Book" Volume 3 for contributions to Universal Data Model patterns.
 
 ### Expertise
-- Healthcare data integration and interoperability
-- HIPAA compliance and security architecture
-- Universal Data Models across multiple industries
-- Enterprise data warehouse design
-- AI and ML platform architecture
-
-### Contact
-For inquiries about this vision or implementation support:
-- **LinkedIn**: [Ray Serrano](https://www.linkedin.com/in/ray-serrano)
-- **GitHub**: [rayserrano2735](https://github.com/rayserrano2735)
-
----
-
-## License
-
-This documentation is provided under the MIT License. See [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-
-This vision builds upon:
-- Proven Universal Data Model patterns for healthcare
-- Industry best practices for HIPAA compliance
-- Lessons learned from mental healthcare transformation initiatives
-- Modern cloud-native architecture principles
-- AI and ML capabilities for healthcare applications
-
----
-
-## Disclaimer
-
-This repository contains strategic vision and architecture documentation. Implementation details, specific configurations, and deployment procedures should be reviewed and validated by qualified technical and compliance professionals before production use.
-
-The compliance frameworks described herein are based on current HIPAA regulations and industry best practices as of October 2025. Organizations should consult with legal counsel and compliance advisors to ensure their specific implementation meets all applicable regulatory requirements.
+- Product strategy for data and AI platforms
+- Healthcare data integration leveraging cross-industry best practices
+- Universal Data Model methodology and implementation
+- HIPAA compliance architecture and regulatory frameworks
+- Enterprise platform design and technology selection
 
 ---
 
