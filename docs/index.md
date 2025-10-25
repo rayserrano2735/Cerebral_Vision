@@ -139,7 +139,7 @@ A comprehensive strategic vision document that outlines:
 
 ### Browsable Data Model
 
-**[Explore the interactive data model](https://raw.githubusercontent.com/rayserrano2735/Cerebral_Vision/refs/heads/main/reports/data_model/index.htm)**
+**[Explore the interactive data model](https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/reports/data_model/index.htm)**
 
 > *Tip: Right-click and "Open in New Tab" to explore while keeping this page open*
 
