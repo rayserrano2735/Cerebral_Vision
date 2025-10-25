@@ -145,16 +145,11 @@ A comprehensive strategic vision document that outlines:
 
 An interactive data model demonstrating Universal Data Model patterns and documentation standards:
 
-**How to View the Models:**
+**How to Navigate:**
 
 ![Data Model Navigation](https://raw.githubusercontent.com/rayserrano2735/Cerebral_Vision/main/docs/Screenshot%202025-10-24%20204217.png)
 
-The left pane displays a tree structure with four models: data_model DM1 (general comprehensive model), Main Model, DATA_MART, SOURCES, and UDM. To view any model's entity-relationship diagram, **click on the "Model Image" icon** beneath that model's name in the tree. The diagram will display in the main area, where you can then click individual entities to explore their metadata.
-
-**Navigation:**
-- Four focused models available: Main Model (comprehensive), DATA_MART, SOURCES, and UDM (Universal Data Model)
-- **Click on "Model Image"** under any model name to view its entity-relationship diagram
-- Within each diagram, click individual entities to view detailed metadata, columns, data types, and relationships
+The left pane displays a tree structure with four models: Main Model (comprehensive), DATA_MART, SOURCES, and UDM (Universal Data Model). To view any model's entity-relationship diagram, **click on the "Model Image" icon** beneath that model's name in the tree. The diagram will display in the main area, where you can then click individual entities to explore their detailed metadata, columns, data types, and relationships.
 
 **What's Shown:**
 - Entity-relationship diagrams illustrating UDM integration patterns
@@ -190,7 +185,7 @@ Data Platform Product Leader with 20+ years architecting enterprise data solutio
 
 **Letter of Recommendation**
 
-[View letter from Len Silverston](https://raw.githubusercontent.com/rayserrano2735/Cerebral_Vision/main/docs/Letter%20of%20rec%20healthcare%20ray%20082525%20(1).pdf)
+[View letter from Len Silverston](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/rayserrano2735/Cerebral_Vision/main/docs/Letter%20of%20rec%20healthcare%20ray%20082525%20(1).pdf&embedded=true)
 
 ---
 
