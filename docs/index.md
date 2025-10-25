@@ -145,10 +145,16 @@ A comprehensive strategic vision document that outlines:
 
 An interactive data model demonstrating Universal Data Model patterns and documentation standards:
 
+**How to View the Models:**
+
+![Data Model Navigation](data_model_navigation.png)
+
+The left pane displays a tree structure with four models: data_model DM1 (general comprehensive model), Main Model, DATA_MART, SOURCES, and UDM. To view any model's entity-relationship diagram, **click on the "Model Image" icon** beneath that model's name in the tree. The diagram will display in the main area, where you can then click individual entities to explore their metadata.
+
 **Navigation:**
-- The left pane displays a tree structure containing a **general comprehensive model** plus three focused sub-models: Sources Integration, Universal Data Model (UDM), and Data Marts
-- **Click on any model name in the tree** to view its entity-relationship diagram in the main display area
-- Within each model, click individual entities to view detailed metadata, columns, data types, and relationships
+- Four focused models available: Main Model (comprehensive), DATA_MART, SOURCES, and UDM (Universal Data Model)
+- **Click on "Model Image"** under any model name to view its entity-relationship diagram
+- Within each diagram, click individual entities to view detailed metadata, columns, data types, and relationships
 
 **What's Shown:**
 - Entity-relationship diagrams illustrating UDM integration patterns
@@ -175,6 +181,16 @@ Data Platform Product Leader with 20+ years architecting enterprise data solutio
 - Universal Data Model methodology and implementation
 - HIPAA compliance architecture and regulatory frameworks
 - Enterprise platform design and technology selection
+
+### Industry Recognition
+
+**Acknowledgment in "The Data Model Resource Book" Volume 3**
+
+![Book Acknowledgment](https://raw.githubusercontent.com/rayserrano2735/Cerebral_Vision/main/docs/LenRay.jpg)
+
+**Letter of Recommendation**
+
+[View letter from Len Silverston](https://github.com/rayserrano2735/Cerebral_Vision/blob/main/docs/Letter%20of%20rec%20healthcare%20ray%20082525%20(1).pdf)
 
 ---
 
