@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6 {
 </style>
 
 # Cerebral Vision: Healthcare Data & AI Strategy
-## Transforming Mental Healthcare Through Intelligent Data Architecture
+## Facilitating Cerebral's Integration of Resilience Lab and the Center of Excellence Vision
 
 <iframe src="https://raw.githack.com/rayserrano2735/Cerebral_Vision/main/docs/money_shot_interactive.html" width="100%" height="720" frameborder="0" style="border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"></iframe>
 
