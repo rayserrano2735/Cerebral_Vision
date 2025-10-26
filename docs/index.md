@@ -1,3 +1,9 @@
+<style>
+body, main, article, .markdown-body {
+  font-family: Georgia, serif !important;
+}
+</style>
+
 # Cerebral Vision: Healthcare Data & AI Strategy
 ## Transforming Mental Healthcare Through Intelligent Data Architecture
 

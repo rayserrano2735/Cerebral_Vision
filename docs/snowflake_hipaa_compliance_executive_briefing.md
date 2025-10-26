@@ -1,3 +1,9 @@
+<style>
+body, main, article, .markdown-body {
+  font-family: Georgia, serif !important;
+}
+</style>
+
 # Snowflake HIPAA Compliance Framework
 ## Executive Briefing for Compliance Leadership
 
