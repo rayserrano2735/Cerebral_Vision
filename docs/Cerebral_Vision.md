@@ -1,3 +1,9 @@
+<style>
+body, main, article, .markdown-body {
+  font-family: Georgia, serif !important;
+}
+</style>
+
 # AscendAI: Facilitating Cerebral's Integration of Resilience Lab and the Center of Excellence Vision
 
 *Data and AI Infrastructure Demonstrating the Merger's Strategic Value*
