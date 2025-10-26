@@ -2,6 +2,9 @@
 body, main, article, .markdown-body {
   font-family: Georgia, serif !important;
 }
+h1, h2, h3, h4, h5, h6 {
+  color: #4A90E2;
+}
 </style>
 
 # AscendAI: Facilitating Cerebral's Integration of Resilience Lab and the Center of Excellence Vision
@@ -172,7 +175,7 @@ The Platform Product Core includes the capabilities that provide value to stakeh
 
 ## Business Logic and Semantics Layer:
 
-**dbt Semantic Layer: **Business metrics definitions that serve as a single source of truth for all metrics across the organization.
+**dbt Semantic Layer:**Business metrics definitions that serve as a single source of truth for all metrics across the organization.
 
 **Domain Analytics:** Four specialized data marts (Clinical Outcomes, Clinician Development, Operational Integration, Financial), designed to meet specific stakeholder needs.
 
