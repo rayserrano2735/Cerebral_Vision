@@ -92,60 +92,20 @@ A visual demonstration of Universal Data Model methodology solving real integrat
 
 ---
 
-### AscendAI Platform Video Presentation
+### AscendAI Platform Product Suite - Presentation
 
-**[Watch the Interactive Video Presentation](https://www.canva.com/design/DAG2XGX5ADk/wUW0MqBrbL2ArHxt29Mdvg/view?utm_content=DAG2XGX5ADk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)** *(Video narration in production - available soon)*
+**[View the executive presentation](https://www.canva.com/design/DAG2XGX5ADk/wUW0MqBrbL2ArHxt29Mdvg/view?utm_content=DAG2XGX5ADk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)**
 
-> *Navigate at your own pace through the AscendAI platform vision with slide-by-slide narration and detailed walkthrough.*
+> *Tip: Choose "Continue in browser" to view without signing in, or open in Canva if you have an account*
 
-An interactive video presentation where each slide includes narration explaining:
-- How AscendAI addresses Cerebral's four critical data gaps
-- The complete platform architecture from data sources to AI capabilities
-- HIPAA compliance through structural PARTY/PERSON architecture
-- Phased implementation roadmap with progressive value delivery
-- Specific value propositions for CEO, President, and Chief Compliance Officer
+Executive presentation deck covering:
+- Visual overview of the AscendAI platform architecture
+- Product suite components and capabilities
+- Integration strategy and technology stack
+- Business value proposition and ROI framework
+- Implementation approach and timeline
 
-**Why This Format:**
-- **Self-paced viewing**: Advance slides when you're ready, pause to process complex concepts
-- **Team viewing**: Watch together with natural discussion breaks between slides
-- **Section sharing**: Direct colleagues to specific slides (e.g., "see slides 12-14 for compliance architecture")
-- **Rewatch flexibility**: Revisit technical sections like the UDM architecture flow as needed
-
-**What's Covered:**
-- The merger reality: cultural integration succeeding, data integration blocking progress
-- Four critical data gaps and how AscendAI solves each
-- Complete architecture with integration, compliance, and analytics layers
-- The Universal Data Model as proven healthcare integration foundation
-- Technology stack: battle-tested tools (Snowflake, dbt, Looker, Cortex, Vanta)
-- Implementation timeline: 3 phases over 24 months with 6-month value intervals
-- Next steps: immediate actions, 30-day milestones, decision required
-
-**Note on Development:**
-This platform vision was developed from initial HR conversations and publicly available merger information, combined with 20 years of healthcare data integration experience. It represents strategic starting points ready to be refined with Cerebral's institutional knowledge and operational reality. **Think of it as the framework - the bucket - ready to be filled with your detailed context.**
-
----
-
-### Presentation Deck for Your Use
-
-**[Use This Presentation in Your Meetings](https://www.canva.com/design/DAG2XGX5ADk/wUW0MqBrbL2ArHxt29Mdvg/view?utm_content=DAG2XGX5ADk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)**
-
-> *The same Canva presentation without narration - for your internal discussions, board meetings, or team presentations*
-
-**How to Use:**
-- **Share the link** for asynchronous review by stakeholders
-- **Open and screen-share** during live presentations to your teams or board
-- **Send to board members** before meetings to provide context
-- **Present at your own pace** - add your own narrative based on your organizational context
-
-**Ideal For:**
-- Board meetings discussing merger integration strategy
-- Technical validation sessions with IT and data teams
-- Compliance committee briefings with Chief Compliance Officer
-- Executive alignment meetings with CEO and President
-- Budget approval presentations showing phased ROI delivery
-
-**What You're Getting:**
-The same professional Canva presentation with all architecture diagrams, compliance explanations, implementation roadmaps, and value propositions. Use it as-is or adapt your narrative to emphasize the aspects most relevant to your audience.
+**Format:** Interactive Canva presentation for executive and board meetings
 
 ---
 
