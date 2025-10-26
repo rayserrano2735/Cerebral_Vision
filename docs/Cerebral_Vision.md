@@ -17,24 +17,24 @@ h1, h2, h3, h4, h5, h6 {
 
 ## Table of Contents
 
-### Executive Overview
+### <span style="color: black;">Executive Overview</span>
 - [Executive Summary](#executive-summary)
   - [Clinical Decision Integrity Through Data Governance](#clinical-decision-integrity-through-data-governance)
   - [Technological Reality and Innovation](#technological-reality-and-innovation)
 
-### Strategic Foundation
+### <span style="color: black;">Strategic Foundation</span>
 - [The Strategic Imperative: Unlocking Merger Value via Data](#the-strategic-imperative-unlocking-merger-value-via-data)
 - [The Data Integration Challenge](#the-data-integration-challenge)
 - [Proving the Position of the Center of Excellence](#proving-the-position-of-the-center-of-excellence)
 - [Scaling Methodology While Preserving Fidelity](#scaling-methodology-while-preserving-fidelity)
 - [Demonstrating Acquisition Value to the Board](#demonstrating-acquisition-value-to-the-board)
 
-### Platform Architecture
+### <span style="color: black;">Platform Architecture</span>
 - [The AscendAI Platform: Ensuring Structural Integrity from the Ground Up](#the-ascendai-platform-ensuring-structural-integrity-from-the-ground-up)
 - [The Universal Data Model: A Proven Foundation for Healthcare](#the-universal-data-model-a-proven-foundation-for-healthcare)
 - [Strategic Integration Points](#strategic-integration-points)
 
-### Data Sources & Integration
+### <span style="color: black;">Data Sources & Integration</span>
 - [Platform Data Sources: Five Categories](#platform-data-sources-five-categories)
   - [1. Resilience Lab Data](#1-resilience-lab-data)
   - [2. Cerebral Platform Insights](#2-cerebral-platform-insights)
@@ -42,38 +42,38 @@ h1, h2, h3, h4, h5, h6 {
   - [4. Specialty Care Details](#4-specialty-care-details)
   - [5. Compliance and Security Components](#5-compliance-and-security-components)
 
-### Technical Architecture
+### <span style="color: black;">Technical Architecture</span>
 - [Universal Data Model Integration and Data Transformation Layer](#universal-data-model-integration-and-data-transformation-layer)
 - [Business Logic and Semantics Layer](#business-logic-and-semantics-layer)
 - [Analytics & AI Platform](#analytics--ai-platform)
 - [Compliance & Security Foundation Layer](#compliance--security-foundation-layer)
 
-### Implementation Phases
+### <span style="color: black;">Implementation Phases</span>
 - [Phase 4: Analytical and Operational AI Agentics - Current Market Reality](#phase-4-analytical-and-operational-ai-agentics---current-market-reality)
 - [The Integration-Driven Roadmap: Dual-Approach Value Delivery](#the-integration-driven-roadmap-dual-approach-value-delivery)
 
-#### Phase 1: Foundation (Months 1-6)
+#### <span style="color: black;">Phase 1: Foundation (Months 1-6)</span>
 - [Phase 1: Integration Visibility and Executive Reporting](#phase-1-integration-visibility-and-executive-reporting-months-1-6)
 - [Concrete Example: The CEO Board Presentation](#concrete-example-the-ceo-board-presentation)
 - [What Gets Built and Success Metrics](#what-gets-built-and-success-metrics)
 - [30-Day Milestones](#30-day-milestones-beginning-of-phase-1)
 - [Why Phase One Must Be Completed First](#why-phase-one-must-be-completed-first)
 
-#### Phase 2: Empowerment (Months 7-12)
+#### <span style="color: black;">Phase 2: Empowerment (Months 7-12)</span>
 - [Phase 2: Methodology Insights and Clinician Empowerment](#phase-2-methodology-insights-and-clinician-empowerment-months-7-12)
 - [Concrete Example: The Care Coordinator Query](#concrete-example-the-care-coordinator-query)
 - [Cultural Integration via Data Empowerment](#cultural-integration-via-data-empowerment)
 
-#### Phase 3: Excellence (Months 13-24)
+#### <span style="color: black;">Phase 3: Excellence (Months 13-24)</span>
 - [Phase 3: AI-Driven Clinical Excellence and Competitive Edge](#phase-3-ai-driven-clinical-excellence-and-competitive-edge-months-13-24)
 - [Concrete Example: The Agentic Alert with Decision Trace](#concrete-example-the-agentic-alert-with-decision-trace)
 - [How This Demonstrates the Merger's Strategic Value](#how-this-demonstrates-the-mergers-strategic-value)
 
-### Success Measurement
+### <span style="color: black;">Success Measurement</span>
 - [Measurement Framework: North Star Metric and Success Indicators](#measurement-framework-north-star-metric-and-success-indicators)
 - [North Star Metric: Time to Trusted Insight](#north-star-metric-time-to-trusted-insight)
 
-### Stakeholder Alignment
+### <span style="color: black;">Stakeholder Alignment</span>
 - [Brian Reinken (CEO): The Strategic Narrative Builder](#brian-reinken-chief-executive-officer-the-strategic-narrative-builder)
 - [Marc Goldberg (President): The Execution Validator](#marc-goldberg-president-the-execution-validator)
 - [Jacqueline Kniska (Chief Compliance, Ethics, and Privacy Officer): The Regulatory Guardian](#jacqueline-kniska-chief-compliance-ethics-and-privacy-officer-the-regulatory-guardian)
@@ -82,20 +82,20 @@ h1, h2, h3, h4, h5, h6 {
 - [Operations Leadership: Streamlining Workflows During Scale-Up of Quality](#operations-leadership-streamlining-workflows-during-scale-up-of-quality)
 - [Finance Leadership: Validating the Acquisition Business Case](#finance-leadership-validating-the-acquisition-business-case)
 
-### Team & Execution
+### <span style="color: black;">Team & Execution</span>
 - [Building the Team That Provides Integration Value](#building-the-team-that-provides-integration-value)
 - [Phase One Team: Focus on Integration](#phase-one-team-focus-on-integration)
 - [Hiring Strategy During Integration](#hiring-strategy-during-integration)
 - [Build Versus Partner for Faster Integration](#build-versus-partner-for-faster-integration)
 
-### Risk Management
+### <span style="color: black;">Risk Management</span>
 - [Risk Mitigation and Strategic Contingency Planning](#risk-mitigation-and-strategic-contingency-planning)
 - [Data Quality and Integration Challenges](#data-quality-and-integration-challenges)
 - [Clinician Resistance to Adoption](#clinician-resistance-to-adoption)
 - [Vendor Dependency and Timeline Delays](#vendor-dependency-and-timeline-delays)
 - [Integration Fatigue and Competing Priorities](#integration-fatigue-and-competing-priorities)
 
-### Next Steps
+### <span style="color: black;">Next Steps</span>
 - [Implementation Roadmap and Next Steps](#implementation-roadmap-and-next-steps)
 - [Immediate Actions](#immediate-actions)
 - [30-Day Milestones (Phase 1 Launch)](#30-day-milestones-phase-1-launch)
