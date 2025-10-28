@@ -83,7 +83,7 @@ A visual demonstration of Universal Data Model methodology solving real integrat
 - Demonstrates dose-response relationship (causality, not just correlation)
 
 **Why This Matters:**
-- Proves UDM methodology with real data (not theoretical diagrams)
+- Demonstrates the data integration process with sample data rather than just structurally
 - Shows Master Data Management as architectural consequence (not $20M project)
 - Demonstrates scalability to any future integration (acquisitions, partnerships)
 - Answers complex board questions with simple SQL
