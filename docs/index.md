@@ -94,7 +94,7 @@ A visual demonstration of Universal Data Model methodology solving real integrat
 
 ### AscendAI Platform Video Presentation
 
-**[Watch the Interactive Video Presentation](https://www.canva.com/design/DAG2XGX5ADk/wUW0MqBrbL2ArHxt29Mdvg/view?utm_content=DAG2XGX5ADk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)** *(Video narration in production - available soon)*
+**[Watch the Interactive Video Presentation](https://www.canva.com/design/DAG3BM_X9b0/5zuxUs_c7MCyPBTs9YWNAw/edit?utm_content=DAG3BM_X9b0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)**
 
 > *Navigate at your own pace through the AscendAI platform vision with slide-by-slide narration and detailed walkthrough.*
 
