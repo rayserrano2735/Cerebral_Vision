@@ -100,6 +100,7 @@ A visual demonstration of Universal Data Model methodology solving real integrat
 
 ![Navigation Instructions](VideoInstructions.jpg)
 
+
 An interactive video presentation where each slide includes narration explaining:
 - How AscendAI addresses Cerebral's four critical data gaps
 - The complete platform architecture from data sources to AI capabilities
