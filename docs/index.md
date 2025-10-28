@@ -217,7 +217,7 @@ The left pane displays a tree structure with four models: Main Model (comprehens
 
 ### Author
 **Ray Serrano**  
-Data Platform Product Leader with 20+ years architecting enterprise data solutions across financial services, insurance, telecommunications, healthcare, travel, and retail sectors. This cross-industry perspective brings proven integration patterns from mature data environments to healthcare's unique regulatory and clinical challenges. Harvard Master's degree in Information Management Systems with Data Science certification. Acknowledged in Len Silverston's "The Data Model Resource Book" Volume 3 for contributions to Universal Data Model patterns.
+Data Platform Product Leader with 20+ years productizing enterprise data solutions across financial services, insurance, telecommunications, healthcare, travel, and retail sectors. This cross-industry perspective brings proven integration patterns from mature data environments to healthcare's unique regulatory and clinical challenges. Harvard Master's degree in Information Management Systems with Data Science certification. Acknowledged in Len Silverston's "The Data Model Resource Book" Volume 3 for contributions to Universal Data Model patterns.
 
 ### Expertise
 - Product strategy for data and AI platforms
