@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 
 # AscendAI: Facilitating Cerebral's Integration of Resilience Lab and the Center of Excellence Vision
 
-*Data and AI Infrastructure Demonstrating the Merger's Strategic Value*
+*Data and AI Platform Product Demonstrating the Merger's Strategic Value*
 
 *Ray Serrano*
 
