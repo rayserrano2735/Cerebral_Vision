@@ -31,6 +31,8 @@ The AscendAI platform addresses these challenges through intelligent data archit
 
 **cerebral-ascendai.com is an available domain**
 
+![Logo Option](https://raw.githubusercontent.com/rayserrano2735/Cerebral_Vision/main/docs/logo_final.png)
+
 **Why Brand the Platform?**
 
 - **Product Thinking vs. Project Thinking**: Instead of "implementing a data warehouse," this positions a cohesive **product suite** that executives can champion and stakeholders can rally behind
