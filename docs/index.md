@@ -31,7 +31,7 @@ The AscendAI platform addresses these challenges through intelligent data archit
 
 **cerebral-ascendai.com is an available domain**
 
-![Logo Option2](https://raw.githubusercontent.com/rayserrano2735/Cerebral_Vision/main/docs/logo_final.png)
+![Logo Option2](https://raw.githubusercontent.com/rayserrano2735/Cerebral_Vision/main/docs/logo_final2.png)
 
 **Why Brand the Platform?**
 
