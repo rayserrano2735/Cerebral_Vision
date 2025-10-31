@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 </style>
 
-# Snowflake HIPAA Compliance Framework
+# AscendAI HIPAA Compliance Framework
 ## Executive Briefing for Compliance Leadership
 
 **Prepared for:** Brian Reinken, CEO | Marc Goldberg, President | Jacqueline Kniska, Chief Compliance Officer  
