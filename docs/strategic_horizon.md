@@ -1,5 +1,14 @@
+<style>
+body, main, article, .markdown-body {
+  font-family: Georgia, serif !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #4A90E2;
+}
+</style>
+
 <p align="center">
-  <img src="logo_final2.png" alt="AscendAI Logo" width="500"/>
+  <img src="logo_final2.png" alt="AscendAI Logo" width="300"/>
   <br><em>The Semantic and Agentic Future of Healthcare Data</em>
 </p>
 
