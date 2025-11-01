@@ -54,7 +54,6 @@ h1, h2, h3, h4, h5, h6 {
 
   <button class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('agenticEntryPlain').innerText)" aria-label="Copy definition to clipboard">Copy</button>
 
-  <!-- Hidden plain-text payload for clean copying -->
   <pre id="agenticEntryPlain" class="visually-hidden">
 Agentic (noun)
 Plural: Agentics
@@ -94,8 +93,8 @@ The rise of the Agentic signifies a transition from tool-based AI to participant
     --card: #f8fafc;
 
     /* AscendAI accents */
-    --lavender: #A78BFA; /* lavender */
-    --teal: #5EEAD4;     /* teal */
+    --lavender: #A78BFA;
+    --teal: #5EEAD4;
 
     --chip-bg: #f1f5f9;
     --chip-fg: #4f46e5;
@@ -131,7 +130,11 @@ The rise of the Agentic signifies a transition from tool-based AI to participant
     line-height: 1.6;
     box-shadow: var(--shadow);
     max-width: 900px;
+
+    /* 👇 New fix */
+    margin-bottom: 1.75rem;
   }
+
   .agentic-card h2{
     margin: 0 0 8px 0;
     color: var(--lavender);
@@ -147,7 +150,7 @@ The rise of the Agentic signifies a transition from tool-based AI to participant
     color: var(--chip-fg);
     padding: 4px 6px;
     border-radius: 6px;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   }
 
   .copy-btn{
@@ -169,7 +172,6 @@ The rise of the Agentic signifies a transition from tool-based AI to participant
     white-space: pre-wrap;
   }
 </style>
-
 
 
 AscendAI represents the next evolution in healthcare intelligence — a platform that transforms compliance-driven data systems into a **patient-driven data economy**. It operationalizes the intent of the 21st Century Cures Act by merging semantic understanding, AI agency, and operational intelligence into a single fabric of trust and value creation. In doing so, AscendAI turns interoperability from a regulatory mandate into a competitive advantage.
