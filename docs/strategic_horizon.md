@@ -174,7 +174,7 @@ The rise of the Agentic signifies a transition from tool-based AI to participant
 </style>
 
 
-AscendAI represents the next evolution in healthcare intelligence — a platform that transforms compliance-driven data systems into a **patient-driven data economy**. It operationalizes the intent of the 21st Century Cures Act by merging semantic understanding, AI agency, and operational intelligence into a single fabric of trust and value creation. In doing so, AscendAI turns interoperability from a regulatory mandate into a competitive advantage.
+AscendAI represents the next evolution in healthcare intelligence — a platform that transforms compliance-driven data systems into a **patient-driven data economy**. It operationalizes the intent of the 21st Century Cures Act by merging semantic understanding, AI Agentics, and operational intelligence into a single fabric of trust and value creation. In doing so, AscendAI turns interoperability from a regulatory mandate into a competitive advantage.
 
 By embedding cognition and consent at the infrastructure level, AscendAI redefines what it means to be HIPAA-compliant. Privacy becomes an active, verifiable state — the foundation upon which intelligence and patient empowerment are built. The result is a self-sustaining ecosystem where patients, providers, and innovators collaborate across shared meaning and verified trust.
 
