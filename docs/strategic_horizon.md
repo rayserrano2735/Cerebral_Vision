@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   <b>Pronunciation:</b> /ˈeɪ·dʒən·tɪk/</p>
 
   <p><b class="hl">Definition</b><br>
-  An autonomous artificial intelligence entity possessing sustained goal-directed reasoning, contextual awareness, and the capacity to initiate and adapt its own actions without continuous human prompting.
+  An autonomous digital intelligence entity possessing sustained goal-directed reasoning, contextual awareness, and the capacity to initiate and adapt its own actions without continuous human prompting.
   An <i>Agentic</i> represents a new class of digital actors distinguished from human agents by computational, rather than biological, agency.</p>
 
   <p><b class="hl">Etymology</b><br>
