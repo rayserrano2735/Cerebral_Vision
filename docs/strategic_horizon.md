@@ -18,6 +18,159 @@ h1, h2, h3, h4, h5, h6 {
 
 ## Executive Abstract: The AscendAI Vision
 
+<!-- Agentic (noun) — auto light/dark card with Copy button -->
+<div class="agentic-card" role="region" aria-label="Lexical entry: Agentic">
+  <h2>🧾 <i>Agentic</i> (noun)</h2>
+
+  <p><b>Agentic</b> (<i>noun</i>)<br>
+  <b>Plural:</b> <i>Agentics</i><br>
+  <b>Pronunciation:</b> /ˈeɪ·dʒən·tɪk/</p>
+
+  <p><b class="hl">Definition</b><br>
+  An autonomous artificial intelligence entity possessing sustained goal-directed reasoning, contextual awareness, and the capacity to initiate and adapt its own actions without continuous human prompting.
+  An <i>Agentic</i> represents a new class of digital actors distinguished from human agents by computational, rather than biological, agency.</p>
+
+  <p><b class="hl">Etymology</b><br>
+  Derived from the adjective <i>agentic</i> (“having agency or the capacity to act with intention”), nominalized to denote the bearer of that property.
+  English precedent supports this morphological shift (e.g., <i>collective</i>, <i>native</i>, <i>creative</i>).</p>
+
+  <p><b class="hl">Contrast</b></p>
+  <ul>
+    <li><b>Agent:</b> A general actor, which may be human or artificial.</li>
+    <li><b>Agentic:</b> Specifically an AI-based autonomous actor capable of independent goal formation and execution.</li>
+  </ul>
+
+  <p><b class="hl">Usage Note</b><br>
+  The term <i>Agentic</i> formalizes a linguistic distinction increasingly necessary in the era of autonomous AI.
+  It marks the emergence of a non-human center of agency — one that operates through computational cognition rather than human intent.</p>
+
+  <p><b class="hl">Example (technical context):</b><br>
+    <code class="chip">Each Agentic in the AscendAI network negotiates its objectives and data streams dynamically, maintaining self-supervision and peer coordination.</code>
+  </p>
+
+  <p><b class="hl">Example (conceptual context):</b><br>
+    <code class="chip">The rise of the Agentic signifies a transition from tool-based AI to participant-based intelligence — systems that not only execute but decide.</code>
+  </p>
+
+  <button class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('agenticEntryPlain').innerText)" aria-label="Copy definition to clipboard">Copy</button>
+
+  <!-- Hidden plain-text payload for clean copying -->
+  <pre id="agenticEntryPlain" class="visually-hidden">
+Agentic (noun)
+Plural: Agentics
+Pronunciation: /ˈeɪ·dʒən·tɪk/
+
+Definition:
+An autonomous artificial intelligence entity possessing sustained goal-directed reasoning, contextual awareness, and the capacity to initiate and adapt its own actions without continuous human prompting.
+An Agentic represents a new class of digital actors distinguished from human agents by computational, rather than biological, agency.
+
+Etymology:
+Derived from the adjective agentic (“having agency or the capacity to act with intention”), nominalized to denote the bearer of that property.
+English precedent supports this morphological shift (e.g., collective, native, creative).
+
+Contrast:
+- Agent: A general actor, which may be human or artificial.
+- Agentic: Specifically an AI-based autonomous actor capable of independent goal formation and execution.
+
+Usage Note:
+The term Agentic formalizes a linguistic distinction increasingly necessary in the era of autonomous AI.
+It marks the emergence of a non-human center of agency — one that operates through computational cognition rather than human intent.
+
+Example (technical context):
+Each Agentic in the AscendAI network negotiates its objectives and data streams dynamically, maintaining self-supervision and peer coordination.
+
+Example (conceptual context):
+The rise of the Agentic signifies a transition from tool-based AI to participant-based intelligence — systems that not only execute but decide.
+  </pre>
+</div>
+
+<style>
+  /* Color system (light defaults) */
+  :root{
+    --bg: #ffffff;
+    --fg: #111218;
+    --muted: #6b7280;
+    --border: #d1d5db;
+    --card: #f8fafc;
+
+    /* AscendAI accents */
+    --lavender: #A78BFA; /* lavender */
+    --teal: #5EEAD4;     /* teal */
+
+    --chip-bg: #f1f5f9;
+    --chip-fg: #4f46e5;
+    --btn-bg: var(--teal);
+    --btn-fg: #0f172a;
+    --shadow: 0 6px 18px rgba(0,0,0,0.06);
+  }
+
+  /* Dark mode */
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg: #1E1E2F;
+      --fg: #E6E6FA;
+      --muted: #b6b7c9;
+      --border: #2b2c3f;
+      --card: #23243a;
+
+      --chip-bg: #2D2D40;
+      --chip-fg: var(--lavender);
+      --btn-bg: var(--teal);
+      --btn-fg: #081017;
+      --shadow: 0 0 12px rgba(94,234,212,0.25);
+    }
+  }
+
+  .agentic-card{
+    border: 2px solid var(--teal);
+    border-radius: 14px;
+    padding: 20px;
+    background: var(--card);
+    color: var(--fg);
+    font-family: Georgia, serif;
+    line-height: 1.6;
+    box-shadow: var(--shadow);
+    max-width: 900px;
+  }
+  .agentic-card h2{
+    margin: 0 0 8px 0;
+    color: var(--lavender);
+    font-weight: 700;
+  }
+  .agentic-card p{ margin: 0 0 12px 0; }
+  .agentic-card ul{ margin: 8px 0 12px 1.1em; }
+  .hl{ color: var(--teal); }
+
+  .chip{
+    display: inline-block;
+    background: var(--chip-bg);
+    color: var(--chip-fg);
+    padding: 4px 6px;
+    border-radius: 6px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .copy-btn{
+    margin-top: 12px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    background: var(--btn-bg);
+    color: var(--btn-fg);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .copy-btn:active{ transform: translateY(1px); }
+
+  .visually-hidden{
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden; clip: rect(1px, 1px, 1px, 1px);
+    white-space: pre-wrap;
+  }
+</style>
+
+
 AscendAI represents the next evolution in healthcare intelligence — a platform that transforms compliance-driven data systems into a **patient-driven data economy**. It operationalizes the intent of the 21st Century Cures Act by merging semantic understanding, AI agency, and operational intelligence into a single fabric of trust and value creation. In doing so, AscendAI turns interoperability from a regulatory mandate into a competitive advantage.
 
 By embedding cognition and consent at the infrastructure level, AscendAI redefines what it means to be HIPAA-compliant. Privacy becomes an active, verifiable state — the foundation upon which intelligence and patient empowerment are built. The result is a self-sustaining ecosystem where patients, providers, and innovators collaborate across shared meaning and verified trust.
