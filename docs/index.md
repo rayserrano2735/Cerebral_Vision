@@ -12,6 +12,12 @@ h1, h2, h3, h4, h5, h6 {
 
 ### By Ray Serrano
 
+<iframe src="https://rayserrano2735.github.io/Cerebral_Vision/money_shot_interactive.html" width="100%" height="720" frameborder="0" style="border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"></iframe>
+
+> **THE NORTH STAR VISUALIZATION**  
+> This is the board-ready insight AscendAI will deliver: Statistical proof that Cerebral outcomes converge toward Resilience Lab's proven baseline as methodology adoption increases across the combined organization. The platform transforms incompatible source systems into this single, actionable answer that validates merger ROI. Every architectural decision, every integration pattern, and every implementation phase drives toward enabling this visualization with real production data.
+
+---
 
 ## Overview
 
