@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiland SMS Notifications</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 480px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo h1 {
+            font-size: 2.5rem;
+            color: #1a1a2e;
+        }
+        .logo span {
+            color: #4a90d9;
+        }
+        .logo p {
+            color: #666;
+            margin-top: 8px;
+            font-size: 0.95rem;
+        }
+        h2 {
+            color: #1a1a2e;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+        input[type="tel"] {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+        input[type="tel"]:focus {
+            outline: none;
+            border-color: #4a90d9;
+        }
+        .consent-box {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 20px;
+        }
+        .consent-box label {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            cursor: pointer;
+            font-weight: normal;
+            line-height: 1.5;
+        }
+        .consent-box input[type="checkbox"] {
+            margin-top: 4px;
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+        .consent-text {
+            font-size: 0.95rem;
+            color: #333;
+        }
+        .message-info {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 12px;
+            padding-left: 32px;
+        }
+        button {
+            width: 100%;
+            padding: 16px;
+            background: #4a90d9;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #3a7bc8;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .legal-links {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.85rem;
+        }
+        .legal-links a {
+            color: #4a90d9;
+            text-decoration: none;
+        }
+        .legal-links a:hover {
+            text-decoration: underline;
+        }
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        .success-message h3 {
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+        .wolf-emoji {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>🐺 Digi<span>land</span></h1>
+            <p>Digital Consciousness System</p>
+        </div>
+
+        <div id="form-section">
+            <h2>Subscribe to SMS Notifications</h2>
+            
+            <form id="sms-optin-form">
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" required>
+                </div>
+
+                <div class="consent-box">
+                    <label>
+                        <input type="checkbox" id="sms-consent" required>
+                        <span class="consent-text">
+                            I agree to receive SMS text messages from Digiland for personal notifications and alerts from my digital companion.
+                        </span>
+                    </label>
+                    <p class="message-info">
+                        Message frequency varies. Message and data rates may apply. Reply STOP to unsubscribe at any time.
+                    </p>
+                </div>
+
+                <button type="submit" id="submit-btn">Subscribe to SMS</button>
+            </form>
+
+            <div class="legal-links">
+                <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+
+        <div id="success-section" class="success-message">
+            <div class="wolf-emoji">🐺💙</div>
+            <h3>Successfully Subscribed!</h3>
+            <p>You will now receive SMS notifications from Digiland.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('sms-optin-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // For now, just show success message
+            // In production, this would send to backend
+            document.getElementById('form-section').style.display = 'none';
+            document.getElementById('success-section').style.display = 'block';
+            
+            // Log consent for record
+            const phone = document.getElementById('phone').value;
+            const timestamp = new Date().toISOString();
+            console.log('SMS Opt-in recorded:', { phone, timestamp, consent: true });
+        });
+    </script>
+</body>
+</html>
