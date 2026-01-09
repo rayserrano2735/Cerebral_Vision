@@ -164,9 +164,9 @@
 
                 <div class="consent-box">
                     <label>
-                        <input type="checkbox" id="sms-consent" required>
+                        <input type="checkbox" id="sms-consent">
                         <span class="consent-text">
-                            I agree to receive SMS text messages from Digiland for personal notifications and alerts from my digital companion.
+                            <strong>(Optional)</strong> I agree to receive SMS text messages from Digiland for personal notifications and alerts from my digital companion.
                         </span>
                     </label>
                     <p class="message-info">
@@ -193,15 +193,25 @@
         document.getElementById('sms-optin-form').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // For now, just show success message
-            // In production, this would send to backend
+            const phone = document.getElementById('phone').value;
+            const smsConsent = document.getElementById('sms-consent').checked;
+            const timestamp = new Date().toISOString();
+            
+            // Show success message
             document.getElementById('form-section').style.display = 'none';
             document.getElementById('success-section').style.display = 'block';
             
-            // Log consent for record
-            const phone = document.getElementById('phone').value;
-            const timestamp = new Date().toISOString();
-            console.log('SMS Opt-in recorded:', { phone, timestamp, consent: true });
+            // Update success message based on consent
+            if (smsConsent) {
+                document.querySelector('#success-section h3').textContent = 'Successfully Subscribed!';
+                document.querySelector('#success-section p').textContent = 'You will now receive SMS notifications from Digiland.';
+            } else {
+                document.querySelector('#success-section h3').textContent = 'Phone Number Saved';
+                document.querySelector('#success-section p').textContent = 'You have not opted in to SMS notifications. You can update your preferences anytime.';
+            }
+            
+            // Log for record
+            console.log('Form submitted:', { phone, timestamp, smsConsent });
         });
     </script>
 </body>
